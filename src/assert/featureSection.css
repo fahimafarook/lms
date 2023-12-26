@@ -1,0 +1,343 @@
+@font-face {
+    font-family: "lato-regular";
+    src: url(.//fonts/lato-regular.woff2);
+}
+
+@font-face {
+    font-family: "lato-light";
+    src: url(.//fonts/Lato-Light.ttf);
+}
+
+@font-face {
+    font-family: "manrope-light";
+    src: url(.//fonts/manrope-light.otf);
+}
+
+@font-face {
+    font-family: "WixMadeforDisplay-Bold";
+    src: url(.//fonts/WixMadeforDisplay-Bold.ttf);
+}
+
+@font-face {
+    font-family: "WixMadeforDisplay-Regular";
+    src: url(.//fonts/WixMadeforDisplay-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: "WixMadeforDisplay-extraBold";
+    src: url(.//fonts/WixMadeforDisplay-ExtraBold.ttf);
+}
+
+
+.feature-section{
+    height: 90vh;
+    width: 90vw;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    border: solid 1px rgb(244, 243, 243);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.6);
+    /* background: radial-gradient(circle,rgba(148,187,233,1)  0%, rgba(238,174,202,1)250%); */
+    background: linear-gradient(150deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-header{
+    font-size: 300%;
+    text-align: center;
+    font-weight: 100;
+    font-family: "WixMadeforDisplay-extraBold";
+     letter-spacing: 1px;
+     word-spacing: 2px;
+     color: rgb(31, 31, 31);
+     padding-top: 2vh;
+     line-height: 7vh;
+     margin-top: -2vh;
+}
+
+.sub-heading{
+    font-size: 150%;
+    text-align: center;
+    font-family: "WixMadeforDisplay-regular";
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: rgb(83, 83, 83);
+    padding-bottom: 2vh;
+}
+
+.section-partition{
+    display: flex;
+    flex-direction: row;
+}
+
+.right-section{
+    background-color: #a3ebe5;
+    background-color: rgb(133, 176, 250);
+    height: 100vh;
+    width: 40vw;
+    right: 5vw;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: transparent;
+    margin-top: auto;
+    margin-bottom: auto;
+    /* background-color: #ffffff; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
+    margin-left: 30px;
+    border-radius: 15px;
+    background-color: transparent;
+}
+
+.left-section{
+    margin-top: 0vh;
+    width: 40vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.feature-switcher{
+    margin-top: 7vh;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5vw;
+    align-items: center;
+}
+
+.progress-bar-section{
+    padding-left: 7vmin;
+    padding-right: 3vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.up-icon{
+    height: 55px;
+    width: auto;
+    background-color: rgb(239, 226, 240);
+    padding: 1.5vmin;
+    border-radius: 50%;
+    border: solid 0.25px rgb(236, 236, 236);
+}
+
+.down-icon{
+    height: 55px;
+    width: auto;
+    background-color: rgb(239, 226, 240);
+    padding: 1.5vmin;
+    border-radius: 50%;
+    border: solid 0.25px rgb(236, 236, 236);
+}
+
+.feature-bar{
+    height: 25vh;
+    width: 0.15vw;
+    background-color: rgb(216, 216, 216);
+}
+
+.feature-headings-section{
+    font-size: 140%;
+    font-family: "WixMadeforDisplay-regular";
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: rgb(29, 29, 29);
+    padding-left: 1vmin;
+    line-height: 5vmin;
+    font-weight: 900;
+}
+
+.feature-heading{
+    transition: all 0.1s ease;
+}
+
+.feature-selected{
+    font-size: 170%;
+    line-height: 7vmin;
+    color: rgb(0, 0, 0);
+    transition: all 0.5s ease;
+    font-family: "WixMadeforDisplay-bold";
+    padding: 2px 15px;
+    background-color: rgb(248, 244, 244);
+    border-radius: 10px;
+
+}
+
+.phone-bg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    top: -60px;
+    left: 80px;
+    opacity: 0.6;
+}
+
+.background-stars{
+    background-color: #a3ebe5;
+}
+
+.phone-screen{
+    max-height: 55vh;
+    width: 100%;
+    object-fit: contain;
+    z-index: 1;
+    /* transform: rotateX(10deg) rotateY(10deg); */
+    transition: transform 2s ease;
+}
+
+.phone-screen-rotate{
+    transform: rotateX(0deg) rotateY(0deg);
+}
+
+.feature-description{
+    font-size: 150%;
+    color: rgb(34, 33, 33);
+    font-family: "WixMadeforDisplay-regular";
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: center;
+    padding: 5vmin;
+    font-weight: 700;
+    transition: all 2s ease;
+    z-index: 1;
+    font-weight: 900;
+}
+
+.get-staretd-button{
+    background-color: rgb(231, 228, 228);
+    text-align: center;
+    align-self: center;
+    border-radius: 10px;
+    font-family: "WixMadeforDisplay-regular";
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: 700;
+    font-size: 90%;
+    padding: 1.5vmin 4vmin;
+    text-transform: capitalize;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: rgb(238,174,202);
+    background: linear-gradient(150deg, rgba(238,174,202,1) 0%, rgb(148, 233, 217) 100%);
+    color: rgb(45, 45, 45);
+    background:  rgb(234, 234, 234);
+    background-color: rgb(8, 8, 8);
+    color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+  .corner-circle {
+    position: relative;
+    width: 50vh;
+    height: 50vh;
+    right: 200px;
+    bottom: -50px;
+    right: -50px;
+
+    background: radial-gradient(closest-side, #a6e0f9, #ffffff, white);
+    background: radial-gradient(circle closest-side at center, #ccc7ff 80%, transparent 100%, transparent);
+    transition: all 3s ease;
+
+
+}
+
+
+.mobile-screen-container {
+    position: relative;
+  }
+  
+  .phone-screen {
+    width: 200px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+    max-height: 50vh;
+    height: 50vh;
+    width: 100%;
+    object-fit: contain;
+    /* z-index: 1; */
+    /* transform: rotateX(10deg) rotateY(10deg); */
+    transition: transform 2s ease;
+  }
+
+
+.icon-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .icon {
+    width: 15px;
+    height: 15px;
+    animation: moveAnimation 2s ease-in-out infinite alternate;
+    
+  }
+
+  @keyframes moveAnimation {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(10px, 10px);
+    }
+  }
+
+  .icon1{
+    margin-top: 30vh;
+    margin-left: 5vw;
+    animation: moveAnimation 2s ease-in-out infinite alternate;
+    animation-delay: 1s;
+  }
+
+  .icon2{
+    margin-top: -0vh;
+    margin-left: -15vw;
+    animation: moveAnimation 2s ease-in-out infinite alternate;
+    animation-delay: 2s;
+  }
+
+  .icon3{
+    margin-top: -20vh;
+    margin-left: 15vw;
+    animation: moveAnimation 2s ease-in-out infinite alternate;
+    animation-delay: 3s;
+  }
+
+  .icon4{
+    margin-top: 50vh;
+    margin-left: 10vw;
+    animation: moveAnimation 2s ease-in-out infinite alternate;
+    animation-delay: 4s;
+  }
+
+  .icon5{
+    width: 25px; /* Adjust as needed */
+    height: 25px; /*ƒright Adjust as needed */
+    margin-top: 10vh;
+    margin-left: -30vw;
+  }
+
+
+
+  
+
+
+

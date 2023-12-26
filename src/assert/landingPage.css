@@ -1,0 +1,346 @@
+@font-face{
+    font-family : "BebasNeue";
+    src : url("/src/assert/fonts/BebasNeue.woff2")
+}
+
+.landing-page{
+    padding-top: 5vh;
+    background-color: rgb(255, 255, 255);
+    height: 150vh;
+    width: 100vw;
+}
+
+.product-landing{
+    height: 160vh;
+    overflow-x: hidden;
+    width: 100vw;
+    
+}
+
+
+.top-bar{
+    font-family : "BebasNeue";
+    font-size: 100%;
+    letter-spacing: 0.75px;
+    height: 5vh;
+    width: fit-content;
+    display: flex;
+    font-weight: 300;
+    border-radius: 25px 0px 0px 25px;
+    background-color: #A3EBB1;
+     background-color:rgb(255, 153, 127);
+     background-color: #7391C8;
+     background-color: #00B6BC;
+     background-color:rgb(147, 252, 227);
+     background-color: #A3EBB1;
+     background-color: rgb(221, 220, 220);
+
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     right: 0;
+
+     font-family: "WixMadeforDisplay-regular";
+    letter-spacing: 0px;
+    word-spacing: 2px;
+    font-weight: 900;
+}
+
+.logo{
+    margin-left: 5vh;
+}
+
+.top-bar-item {
+    padding: 10px;
+    margin: 5px;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    margin: auto;
+  }
+
+.product-tagline{
+    z-index: 2;
+    width: 90vw;
+    font-size: 700%;
+    /* font-family : "BebasNeue";
+    letter-spacing: 1.5px;
+    letter-spacing: 3px; */
+    font-weight: 600;
+    height: fit-content;
+    line-height: 5vh;
+    padding-left: 30px;
+
+    font-family: "WixMadeforDisplay-bold";
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: 900;
+   
+}
+
+.product-tagline-higlitght{
+    z-index: 2;
+    color: rgb(87, 87, 87);
+    width: 90vw;
+    font-size: 700%;
+    /* font-family : "BebasNeue";
+    letter-spacing: 1.5px;
+    letter-spacing: 3px; */
+    font-weight: 100;
+    font-style: italic;
+    transform: skewX(5deg);
+    line-height: 25vh;
+    padding-left: 30px;
+
+    font-family: "WixMadeforDisplay-regular";
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+
+.book-Demo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    height: 6vh;
+    width: 17vw;
+    margin-top: 7vh;
+    margin-left: 10vw;
+    font-size: 100%;
+    /* font-family: "BebasNeue";
+    letter-spacing: 1.5px; */
+    background-color: #A3EBB1;
+    position: relative;
+    text-align: center;
+    border-radius: 25px;
+    border: solid 0.5px  #A3EBB1;
+    padding-top: auto;
+    padding-bottom: auto;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    font-family: "WixMadeforDisplay-regular";
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: 900;
+    
+}
+
+
+.lms-vid-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-15%, -0%);
+    width: 740px;
+    height: 460px;
+    height: fit-content;
+  }
+
+  .lms-vid {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    position: relative;
+  }
+
+  .product-tagline,
+.product-tagline-higlitght {
+    position: relative;
+    z-index: 2;
+}
+
+
+.overlay {
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 3; /* Set a higher z-index */
+    pointer-events: none; /* Allow clicks to pass through the overlay */
+    transition: background-color 0.5s ease;
+}
+
+.overlay-hidden {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+
+.sas-into-section{
+    position: relative;
+    margin-top: 80vh;
+    height: 80vh;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    /* border-radius: 25px; */
+    background-color: rgb(0, 0, 0);
+    margin-left: 0;
+}
+
+.center-wall{
+    font-family : "BebasNeue";
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 0vw;
+    background-color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 350%;
+    transition: color 0.2s ease; 
+    color: transparent;
+    text-align: center;
+}
+
+.make-visible{
+    color: rgb(0, 0, 0);
+}
+
+.question.question-trasparent{
+    color: transparent;
+    transition: color 1s ease;
+}
+
+.question {
+    font-family : "BebasNeue";
+    letter-spacing: 2px;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 550%;
+    color: white;
+    word-spacing: 5px;
+    text-align: center;
+    transition: color 1s ease;
+}
+
+/* .question::after{
+    content: " LEADs?";
+    color: rgb(147, 252, 227);
+    transition: color 1s ease;
+    
+} */
+
+.question.emptyContent::after {
+    transition: color 1s ease;
+    content: ""; /* Empty content */
+    color: transparent; /* Make text transparent */
+}
+
+.spacing{
+    height: 100vh;
+}
+
+
+.head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 40px;
+    padding-top: 0px;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  .content-box {
+    position: relative;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .heading {
+    height: fit-content;
+    opacity: 0;
+    position: absolute;
+    top: 40vh;
+    font-size: 200%;
+    font-family: "manrope-light";
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    transition: all 1s ease;
+    font-weight: 500;
+    padding: 0;
+    /* background-color: #00B6BC; */
+    z-index: 2;
+    width: 100vw;
+    text-align: center;
+   justify-content: center;
+   background-color: white;
+
+   color: #212121;
+
+    
+   font-family: "WixMadeforDisplay-regular";
+    letter-spacing: 1px;
+    word-spacing: 2px;
+   
+  }
+
+  .active {
+    opacity: 1;
+    display: block;
+  }
+
+  #heading1::after{
+    content: "? ";
+    color: rgb(0, 195, 255);
+    font-size: 125%;
+    font-weight: 900;
+  }
+
+
+  /* .dots-parent-section{
+    margin-top: 10vh;
+    height: 100vh;
+    width: 100vw;
+    background-color: inherit;
+    overflow: hidden;
+  } */
+  
+
+  .main{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    height: 1px;
+    width: 1px;
+    background-color: #000000;
+    border-radius: 50%;
+    box-shadow: -24vw -16vh 1px 2px #000000,-1vw -39vh 3px 2px #000000,0vw 45vh 2px 1px #000000,48vw -48vh 2px 1px #000000,-23vw 11vh 2px 2px #000000,25vw -40vh 3px 1px #000000,-11vw 36vh 2px 0px #000000,1vw -3vh 2px 2px #000000,45vw 25vh 3px 2px #000000,20vw -34vh 2px 2px #000000,-15vw 15vh 2px 1px #000000,1vw -10vh 2px 0px #000000,12vw -38vh 2px 1px #000000,9vw 2vh 3px 1px #000000,-19vw -9vh 1px 2px #000000,-9vw 27vh 2px 1px #000000,38vw 48vh 1px 1px #000000,-27vw -39vh 2px 2px #000000,26vw 3vh 3px 0px #000000,-44vw 48vh 2px 2px #000000,-22vw -38vh 0.5px 2px #ff1a81,30vw 36vh 0.5px 2px #ff1a81,21vw 13vh 0.5px 0px #ff1a81,-41vw -31vh 0.5px 2px #5b5b5b,-7vw 41vh 0.5px 1px #5b5b5b,11vw -22vh 1.5px 2px #5b5b5b,34vw 3vh 0.5px 1px #5b5b5b,-40vw -19vh 1.5px 0px #5b5b5b,21vw -3vh 1.5px 2px #5b5b5b,5vw -48vh 0.5px 2px #5b5b5b,4vw 8vh 0.5px 1px #5b5b5b,19vw 12vh 1.5px 1px #5b5b5b,32vw 19vh 0.5px 0px #5b5b5b,36vw -39vh 0.5px 2px #5b5b5b,-2vw 13vh 1.5px 0px #5b5b5b,36vw -5vh 1.5px 1px #5b5b5b,-25vw 44vh 1.5px 2px #5b5b5b,12vw -46vh 1.5px 1px #5b5b5b,-26vw -35vh 0.5px 0px #5b5b5b,20vw 15vh 1.5px 2px #5b5b5b,-10vw 22vh 1.5px 1px #5b5b5b,-42vw 12vh 1.5px 2px #5b5b5b,30vw 16vh 1.5px 2px #5b5b5b,-17vw -31vh 1.5px 1px #5b5b5b,45vw -1vh 0.5px 2px #5b5b5b,-30vw 8vh 0.5px 2px #5b5b5b,-13vw -35vh 0.5px 1px #5b5b5b,34vw -12vh 1.5px 0px #5b5b5b,-45vw 26vh 1.5px 1px #5b5b5b,-41vw -34vh 0.5px 2px #5b5b5b,-44vw -19vh 1.5px 2px #5b5b5b,4vw -7vh 0.5px 2px #5b5b5b,30vw -40vh 0.5px 2px #5b5b5b,-48vw -44vh 1.5px 1px #5b5b5b,15vw -33vh 0.5px 1px #5b5b5b,-43vw -23vh 0.5px 0px #5b5b5b,24vw -48vh 1.5px 1px #5b5b5b,-48vw 37vh 0.5px 2px #5b5b5b,46vw 25vh 0.5px 2px #5b5b5b,14vw 19vh 0.5px 0px #5b5b5b,-48vw 40vh 0.5px 0px #5b5b5b,-10vw -40vh 0.5px 1px #5b5b5b,31vw 9vh 1.5px 0px #21fd58,-13vw 44vh 0.5px 0px #21fd58,1vw 27vh 0.5px 2px #21fd58,20vw 49vh 0.5px 1px #21fd58,29vw 39vh 0.5px 0px #21fd58,40vw 32vh 0.5px 0px #21fd58,1vw -16vh 0.5px 1px #21fd58,-49vw -45vh 0.5px 2px #21fd58,14vw -22vh 0.5px 1px #21fd58,35vw -42vh 0.5px 2px #21fd58,39vw 3vh 1.5px 0px #21fd58,-6vw -1vh 0.5px 2px #21fd58,45vw 45vh 0.5px 2px #21fd58,-44vw 7vh 0.5px 1px #21fd58,36vw 36vh 1.5px 2px #21fd58,-42vw 40vh 0.5px 0px #21fd58,-22vw 9vh 0.5px 2px #21fd58,-38vw 34vh 0.5px 0px #21fd58,-33vw 14vh 0.5px 2px #21fd58,-5vw -7vh 0.5px 0px #21fd58,26vw 19vh 1.5px 1px #21fd58,-42vw -46vh 0.5px 2px #21fd58,-3vw -16vh 0.5px 2px #21fd58,-13vw -45vh 0.5px 1px #21fd58,5vw 13vh 0.5px 1px #21fd58,-40vw -12vh 1.5px 2px #21fd58,-11vw 36vh 0.5px 0px #21fd58,10vw -37vh 0.5px 2px #21fd58,30vw 50vh 1.5px 1px #21fd58,-37vw -39vh 1.5px 2px #21fd58,-4vw 48vh 0.5px 2px #21fd58,39vw 43vh 1.5px 2px #21fd58,35vw 16vh 0.5px 1px #21fd58,15vw 3vh 1.5px 1px #21fd58,49vw 36vh 0.5px 2px #21fd58,11vw 18vh 0.5px 2px #21fd58,8vw -19vh 0.5px 1px #21fd58,-20vw 3vh 1.5px 1px #21fd58,17vw 46vh 1.5px 2px #21fd58,-29vw -49vh 0.5px 2px #21fd58,-39vw 23vh 0.5px 2px #1afff4, 5px 1px #1afff4,-17vw -28vh 0.5px 0px #1afff4, 21vw 29vh 0.5px 2px #1afff4,-39vw 18vh 0.5px 1px #1afff4,-34vw -29vh 0.5px 1px #1afff4,-3vw -18vh 1.5px 0px #1afff4,-41vw 11vh 1.5px 0px #1afff4,-43vw 38vh 0.5px 2px #1afff4,45vw -29vh 0.5px 0px #1afff4,28vw 6vh 0.5px 0px #1afff4,-15vw 41vh 0.5px 0px #1afff4,35vw 18vh 0.5px 0px #1afff4,-29vw -33vh 1.5px 0px #1afff4,-46vw 47vh 0.5px 0px #1afff4,-31vw 10vh 0.5px 0px #1afff4,7vw -12vh 1.5px 2px #1afff4,30vw -47vh 0.5px 2px #1afff4,-16vw -8vh 0.5px 0px #1afff4,-11vw 43vh 0.5px 0px #1afff4,-8vw -30vh 1.5px 0px #1afff4,-16vw -23vh 1.5px 1px #1afff4,-17vw -28vh 0.5px 0px #ff1a81,
+    48vw -36vh 3px 1px #000000,-30vw 46vh 1px 2px #000000,35vw -33vh 3px 1px #000000,-47vw -3vh 1px 2px #000000,-27vw 47vh 1px 0px #000000,-21vw -32vh 2px 2px #000000,42vw 2vh 3px 2px #000000,30vw 12vh 1px 1px #000000,-27vw -20vh 1px 0px #000000,5vw -39vh 3px 0px #000000,48vw 36vh 1px 0px #000000,-1vw -44vh 3px 2px #000000,-45vw 1vh 1px 0px #000000,31vw -16vh 3px 1px #000000,7vw -39vh 2px 0px #000000,14vw -21vh 1px 2px #000000,-36vw -25vh 1px 2px #000000,31vw -23vh 3px 1px #000000,-11vw -29vh 2px 0px #000000,-22vw -37vh 2px 1px #000000,-20vw -19vh 3px 0px #000000,-49vw 0vh 2px 0px #000000,-50vw 10vh 1px 0px #000000,-44vw 43vh 1px 2px #000000,18vw -7vh 1px 2px #000000,36vw 33vh 3px 0px #000000,9vw 36vh 1px 1px #000000,-1vw -8vh 1px 0px #000000,38vw 24vh 2px 2px #000000,-19vw -11vh 3px 2px #000000;
+    animation: zoom 10s alternate infinite;
+    background-color: #000000;
+    z-index: -1;
+    left: 0;
+
+}
+
+@keyframes zoom {
+    0%{
+        transform: translateY(-150px);
+        /* transform: scale(0); */
+    }
+    100%{
+        transform: translateY(150px);
+        /* transform: scale(1.2); */
+    }
+}
+
+
+
+
+
+
