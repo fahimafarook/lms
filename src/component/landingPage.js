@@ -5,18 +5,21 @@ import "../../src/assert/landingPage.css";
 import lmsvid from "../assert/images/lmsvid2.mp4";
 import logo from "../assert/images/logo.png";
 import FeatureSection from "../component/FeatureSection"
+import data from '../data/featureDetails';
+import Spline from '@splinetool/react-spline';
 
 gsap.registerPlugin(ScrollTrigger);
 
 function LandingPage() {
     const count = useRef(0);
+    
 
     useEffect(() => {
         if (count.current === 0) {
         
         gsap.to(".product-tagline-higlitght", {
-          x: 100, 
-          y: -50, 
+          x: 2, 
+          y: -5, 
           duration: 4,
           scrollTrigger: {
             trigger: ".product-tagline-higlitght",
@@ -29,7 +32,7 @@ function LandingPage() {
         });
 
         gsap.to(".trigger-1", {
-            y: -50, 
+            y: -5, 
             duration: 4,
             scrollTrigger: {
               trigger: ".product-tagline-higlitght",
@@ -40,7 +43,7 @@ function LandingPage() {
           });
 
           gsap.to(".trigger-2", {
-            y: -50, 
+            y: -5, 
             duration: 4,
             scrollTrigger: {
               trigger: ".product-tagline-higlitght",
@@ -51,10 +54,6 @@ function LandingPage() {
           });
 
           gsap.to(".book-Demo", {
-            right: 50,
-            y:"-50%",
-            y:"-50%",
-            duration: 4,
             scrollTrigger: {
               trigger: ".product-tagline-higlitght",
               start: "top 15%",
@@ -62,25 +61,25 @@ function LandingPage() {
             },
           });
 
-          gsap.to(".lms-vid-container", {
-            width: "80vw",
-            x: "-50%",
-            y: 320,
-            transformOrigin: "center",
-            duration: 4,
-            toggleActions: "play none reverse none", 
-            scrollTrigger: {
-                trigger: ".product-tagline-higlitght",
-                start: "top 15%",
-                scrub: true,
-                onEnter: () => {
-                    document.querySelector(".overlay").classList.add("overlay-hidden");
-                },
-                onLeaveBack: () => {
-                  document.querySelector(".overlay").classList.remove("overlay-hidden");
-                }
-            },
-        });
+        //   gsap.to(".lms-vid-container", {
+        //     width: "80vw",
+        //     x: "-50%",
+        //     y: 320,
+        //     transformOrigin: "center",
+        //     duration: 4,
+        //     toggleActions: "play none reverse none", 
+        //     scrollTrigger: {
+        //         trigger: ".product-tagline-higlitght",
+        //         start: "top 15%",
+        //         scrub: true,
+        //         onEnter: () => {
+        //             document.querySelector(".overlay").classList.add("overlay-hidden");
+        //         },
+        //         onLeaveBack: () => {
+        //           document.querySelector(".overlay").classList.remove("overlay-hidden");
+        //         }
+        //     },
+        // });
 
 
         function setScrollText(){
@@ -159,17 +158,17 @@ function LandingPage() {
         
        
         
-        gsap.to('.head', {
-          scrollTrigger: {
-            pin: '.head',
-            end: '+=5200s', 
-            pinSpacing: true,
-            width: "100vw",
-            left:"0px",
-          },
-        });
+        // gsap.to('.head', {
+        //   scrollTrigger: {
+        //     pin: '.head',
+        //     end: '+=5200s', 
+        //     pinSpacing: true,
+        //     width: "100vw",
+        //     left:"0px",
+        //   },
+        // });
         
-        setScrollText();
+        // setScrollText();
         count.current = count.current + 1;
       }
     }
@@ -196,17 +195,22 @@ function LandingPage() {
               <div className='product-tagline trigger-2'>software.</div>
               <div className='book-Demo'>Book Free Demo</div>
 
+            
+
+
               <div className="lms-vid-container">
-              <div className="overlay overlay-visible"></div>
+              {/* <Spline className= "mobile-3d-home-page" scene="https://prod.spline.design/h8l4YY8YrtqZPOmN/scene.splinecode"
+              style={{ width: '100%', height: '100%' }} /> */}
+              {/* <div className="overlay overlay-visible"></div>
               <video className="lms-vid" width="90vw" height="60vh" autoPlay loop muted style={{ zIndex: 1 }}>
                   <source src={lmsvid} type="video/mp4" />
                   Your browser does not support the video tag.
-                  </video>
+                  </video> */}
             </div>
         </div>
 
 
-          <div class="head">
+          {/* <div class="head">
             <div class="main"></div>
             <div class="content-box">
                 <h2 class="heading" id="heading1">Struggling to manage your leads</h2>
@@ -215,13 +219,17 @@ function LandingPage() {
                 <h2 class="heading" id="heading4"></h2>
                 <h2 class="heading" id="heading5"></h2>
             </div>
-          </div>
+          </div> */}
             
-
-          <FeatureSection></FeatureSection>
-         
-          
+         <div className='background-pattern-x'>
+         {data.map((item) => (
+            <FeatureSection key={item.id} {...item} />
+          ))}
+        
           <div className='spacing'></div>
+         </div>
+          
+         
 
         </div>
     );
