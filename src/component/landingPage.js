@@ -188,11 +188,10 @@ function LandingPage() {
                 </div>
             </div>
 
-
-            <div style ={{"marginTop": "10vh"}}></div>
               <div className='product-tagline trigger-1'>Your Smart</div>
               <div className='product-tagline-higlitght'>Telecalling</div>
               <div className='product-tagline trigger-2'>software.</div>
+              <div className='paragraph'>Collaborate, manage projects and reach new productivity peaks. From high rises to the home office, accomplishit all with Zaiask!</div>
               <div className='book-Demo'>Book Free Demo</div>
 
             

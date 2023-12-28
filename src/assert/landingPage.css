@@ -65,10 +65,10 @@
 .product-tagline{
     z-index: 2;
     width: 90vw;
-    font-size: 700%;
+    font-size: 600%;
     font-weight: 600;
     height: fit-content;
-    line-height: 5vh;
+    line-height: 15vh;
     padding-left: 30px;
 
     font-family: "WixMadeforDisplay-regular";
@@ -76,24 +76,39 @@
     word-spacing: 2px;
     font-weight: 900;
     color: #000000;
-   
+}
+
+.trigger-1{
+    margin-top: 5vh;
 }
 
 .product-tagline-higlitght{
     z-index: 2;
-
-    font-size: 700%;
+    font-size: 550%;
     font-weight: 100;
-    line-height: 25vh;
-    padding-left: 30px;
+    line-height: 18vh;
+    font-family: "WixMadeforDisplay-regular";
+    margin-left: 2vw;
+    word-spacing: 2px;
+    background: linear-gradient(150deg, rgba(254, 72, 151, 1) 0%, rgba(21, 130, 255, 1) 100%);
+    width: fit-content;
+    color: white;
+    border-radius: 25px 25px 25px 0;
+    /* -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    width: fit-content; */
+}
+
+.paragraph{
+    margin-top: 2vh;
+    padding: 0 30px;
+    font-size: 110%;
     font-family: "WixMadeforDisplay-regular";
     letter-spacing: 1px;
     word-spacing: 2px;
-    background: linear-gradient(150deg, rgba(254, 72, 151, 1) 0%, rgba(21, 130, 255, 1) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    width: fit-content;
+    width: 50%;
+    color: #414141;
 }
 
 
@@ -104,11 +119,9 @@
     font-weight: 500;
     height: 6vh;
     width: 17vw;
-    margin-top: 12vh;
+    margin-top: 5vh;
     margin-left: 10vw;
     font-size: 100%;
-    /* font-family: "BebasNeue";
-    letter-spacing: 1.5px; */
     background-color: #000000;
     position: relative;
     text-align: center;
@@ -116,9 +129,7 @@
     border: solid 0.5px  #A3EBB1;
     padding-top: auto;
     padding-bottom: auto;
-
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    
     font-family: "WixMadeforDisplay-regular";
     letter-spacing: 1px;
     word-spacing: 2px;
@@ -136,14 +147,12 @@
     width: 740px;
     height: 460px;
     height: fit-content;
-    /* background: rgba(126, 250, 161, 0.5); */
     overflow-x: hidden;
     background-color: transparent;
     z-index: 2;
   }
 
   .mobile-3d-home-page{
-    /* background: rgb(90, 209, 144); */
     margin-left: -9vw ;
     z-index: 1;
   }
