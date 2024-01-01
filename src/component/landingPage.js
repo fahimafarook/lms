@@ -77,10 +77,10 @@ function LandingPage() {
 
 
 
-              <div className="lms-vid-container">
+              {/* <div className="lms-vid-container">
               <Spline className= "mobile-3d-home-page" scene="https://prod.spline.design/h8l4YY8YrtqZPOmN/scene.splinecode"
               style={{ width: '100%', height: '100%' }} />
-            </div>
+            </div> */}
         </div>
 
          {data.map((item) => (
