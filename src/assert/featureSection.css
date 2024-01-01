@@ -13,16 +13,16 @@
     src: url(.//fonts/manrope-light.otf);
 }
 
-@font-face {
-    font-family: "WixMadeforDisplay-Bold";
-    src: url(.//fonts/WixMadeforDisplay-Bold.ttf);
-}
 
 @font-face {
     font-family: "WixMadeforDisplay-Regular";
     src: url(.//fonts/WixMadeforDisplay-Regular.ttf);
 }
 
+@font-face {
+    font-family: "WixMadeforDisplay-Bold";
+    src: url(.//fonts/WixMadeforDisplay-Bold.ttf);
+}
 
 @font-face {
     font-family: "WixMadeforDisplay-extraBold";
@@ -31,17 +31,35 @@
 
 
 .feature-section-parent{
+    z-index: -10;
+    background-color: rgb(0, 0, 0);
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    /* background-image: url("../assert/images/bg6.png"); */
+
+    /* animation: changeBackground 1s linear infinite; */
+    /* animation-delay: 5s; */
+}
+
+@keyframes changeBackground {
+    0% { background-image: url("../assert/images/bg1.png"); }
+    33.33% { background-image: url("../assert/images/bg2.png"); }
+    66.66% { background-image: url("../assert/images/bg3.png"); }
+    99% { background-image: url("../assert/images/bg4.png"); }
+    100%{
+        background-image: url("../assert/images/bg4.png");
+    }
 }
 
 .feature-section{
+    z-index: 2;
+    opacity: 1;
+    overflow: hidden;
     height: 90vh;
     width: 85vw;
     border-radius: 25px;
-    background: rgb(255, 255, 255);
-    /* border: solid 1px rgb(244, 243, 243); */
-    /* box-shadow: 1px 5px 10px rgba(234, 255, 223, 0.5); */
-    /* background: radial-gradient(circle,rgba(148,187,233,1)  0%, rgba(238,174,202,1)250%); */
-    background: linear-gradient(150deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.6) 100%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(150deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, ) 100%);
     margin: 0;
     margin-left: auto;
     margin-right: auto;
@@ -49,17 +67,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-bottom:10vh;
-
-    background:
-    radial-gradient(rgb(242, 242, 242) 3px, transparent 4px),
-    radial-gradient(rgb(243, 243, 243) 3px, transparent 4px),
-    linear-gradient(#ffffff 4px, transparent 0),
-    linear-gradient(45deg, transparent 74px, transparent 75px, #ededed 75px, #ececec 76px, transparent 77px, transparent 109px),
-    linear-gradient(-45deg, transparent 75px, transparent 76px, #ebebeb 76px, #f1f1f1 77px, transparent 78px, transparent 109px),
-    #fff;
-    background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
-    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
     background: linear-gradient(150deg, rgba(83, 132, 255, 0.5) 0%, rgb(255, 86, 64) 100%);
 
     transform: rotateX(10deg); /* Use 90deg for horizontal rotation */
@@ -67,12 +74,17 @@
 
    /* transform: translate3d(0px, -4.4169%, 0px) scale3d(1, 1, 1) rotateX(50deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d; */
+    background: rgb(16, 16, 16);
+    border: solid 0.5px rgb(63, 63, 63);
+    background: linear-gradient(180deg, rgba(37, 37, 37, 0.97) 0%, rgba(11, 11, 11, 0.97) 70%);
 
-    
+    /* box-shadow: 0 10px 20px rgba(255, 255, 255, 0.5); */ 
+    /* box-shadow: 0 0 20px 0 rgba(255, 111, 111, 0.2); */
+    /* transition: ease border 2s; */
 }
 
 .section-header{
-    font-size: 280%;
+    font-size: 270%;
     text-align: center;
     font-weight: 100;
     font-family: "WixMadeforDisplay-extraBold";
@@ -90,6 +102,8 @@
      width: fit-content; */
      color: rgb(255, 255, 255);
 
+     
+
 }
 
 .sub-heading{
@@ -100,6 +114,7 @@
     word-spacing: 2px;
     color: rgb(193, 193, 193);
     padding-bottom: 2vh;
+    
 }
 
 .section-partition{
@@ -162,7 +177,7 @@
     padding: 1.5vmin;
     border-radius: 50%;
     /* border: solid 2px rgb(0, 0, 0); */
-    background-color: rgb(233, 232, 254);
+    background-color: #d1d1d1;
     ;
     cursor: pointer;
 }
@@ -176,20 +191,19 @@
     border-radius: 50%;
     /* border: solid 2px rgb(0, 0, 0); */
     cursor: pointer;
-    background-color: white;
-    background-color: rgb(233, 232, 254);
+    background-color: #d1d1d1;
 }
 
 
 .down-icon:hover{
-    box-shadow: 0 15px 30px rgba(255, 255, 255, 0.7);
-    transition: all 1s ease;
+    box-shadow: 0 15px 30px rgba(255, 255, 255, 0.3);
+    transition: all 0.5s ease;
 }
 
 
 .up-icon:hover{
-    box-shadow: 0 -15px 30px rgba(255, 255, 255, 0.7);
-    transition: all 1s ease;
+    box-shadow: 0 -15px 30px rgba(255, 255, 255, 0.3);
+    transition: all 0.5s ease;
 }
 
 /* .indicate-to-click{
@@ -218,39 +232,52 @@
 .feature-progress-bar{
     height: 5vh;
     width: 0.25vw;
-    background-color: rgb(255, 255, 255);
+    background-color: #b2b2b2;
     position: absolute;
     left: -0.05vw;
     transition: all 0.5s ease;
-    background-color: rgb(18, 137, 248);
+    background-color: rgb(67, 0, 129);
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.2), -4px 0 8px rgba(0, 0, 0, 0.2);
 }
+
+
+
 
 .feature-headings-section{
     font-size: 130%;
     font-family: "WixMadeforDisplay-regular";
     letter-spacing: 1px;
     word-spacing: 2px;
-    color: rgb(29, 29, 29);
+    color: rgb(156, 156, 156);
     padding-left: 1vmin;
     line-height: 6vmin;
     font-weight: 900;
 }
 
+
+.feature-button{        
+    /* background: linear-gradient(145deg, #6557ff, #aa3fff 48%, #fcf74a 76%, #f8522e 92%); */
+    padding: 1px;
+    border-radius: 25px;
+    width: fit-content;
+}
+
+
 .feature-heading{
-    transition: all 0.1s ease;
+    background-color: inherit;
+    border-radius: 25px;
+    padding: 5px 20px;
 }
 
-.feature-selected{
-    font-size: 140%;
-    line-height: 7vmin;
-    color: rgb(0, 0, 0);
-    font-family: "WixMadeforDisplay-bold";
-    padding: 2px 15px;
-    background-color: rgb(248, 244, 244);
-    border-radius: 10px;
-    transition: all 1s ease;
-
+.feature-button-selected {
+    background: linear-gradient(145deg, #6557ff, #aa3fff 48%, #fcf74a 76%, #f8522e 92%);
 }
+
+.feature-selected {
+    background-color: black;
+    color: white;
+}
+
 
 .phone-bg{
     position: absolute;
@@ -325,8 +352,8 @@
 }
 
 .feature-description{
-    font-size: 140%;
-    color: rgb(34, 33, 33);
+    font-size: 130%;
+    color: rgb(190, 190, 190);
     font-family: "WixMadeforDisplay-regular";
     letter-spacing: 1px;
     word-spacing: 2px;
@@ -343,26 +370,37 @@
 }
 
 .get-staretd-button{
-    background-color: rgb(231, 228, 228);
     text-align: center;
     align-self: center;
-    border-radius: 10px;
+    border-radius: 25px;
     font-family: "WixMadeforDisplay-regular";
     letter-spacing: 1px;
     word-spacing: 2px;
     font-weight: 700;
     font-size: 90%;
-    padding: 1.5vmin 4vmin;
     text-transform: capitalize;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     background: rgb(238,174,202);
     background: linear-gradient(150deg, rgb(247, 182, 210)0%, rgb(148, 233, 217) 100%);
     color: rgb(45, 45, 45);
     background:  rgb(234, 234, 234);
-    background-color: rgb(8, 8, 8);
     color: rgb(255, 255, 255);
     z-index: 1;
     margin-bottom: 10vh;
+    padding: 2px;
+    background-color:  #d1d1d1;
+    /* box-shadow: 0 0 20px 0 rgba(255, 105, 105, 0.2); */
+    
+}
+
+.btn-content {
+    /* position: absolute; */
+    background-color:  #d1d1d1;
+    border-radius: 25px;
+    padding: 15px 20px;
+    color: #000;
+    
+
 }
 
   .corner-circle {
@@ -417,13 +455,46 @@
     margin-left: auto ;
     margin-right: auto ;
     background-color: transparent;
-    margin-left: 12vw;
-    margin-top: 10vh;
-
-   scale: 1.1;
+    margin-left: 5vw;
+    margin-top: 7vh;
+   scale: 0.9;
   }
 
+
+  .pointer-light{
+    z-index: -100;
+    top:0;
+    left: 0;
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    background-color: #ccc7ff;
+    border-radius: 50%;
+
+    background: rgba(180, 123, 255, 0.3);
+    background: radial-gradient(#ce80ff, #ff1818);
+    background: linear-gradient(100deg, #6557ff, #aa3fff 48%, #fcf74a 76%, #f8522e 92%);
+
+    background: radial-gradient(closest-side, #561db1, #4800a0, #000000);
+  box-shadow:
+    rgba(255, 255, 255, .2) 0 0 12px 0,
+    rgba(255, 255, 255, .2) 0 0 12px 0,
+    rgba(255, 255, 255, .2) 0 0 16px 0,
+    rgba(255, 255, 255, .2) 0 0 16px 0,
+    rgba(255, 255, 255, .2) 0 0 24px 4px,
+    rgba(255, 255, 255, .2) 0 0 48px 6px;
+  border-radius: 50%;
+  filter: blur(32px);
+  opacity: .5;
+  pointer-events: none;
+  user-select: none;
+  }
+
+
+
   
+
+
 
 
 

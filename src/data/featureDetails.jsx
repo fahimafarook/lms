@@ -59,6 +59,40 @@ const features = [
                 image: 'connect_broadcasting'
             }
         ]
+    },
+    
+    {
+        id: 3,
+        name: 'Connect with leads',
+        description: 'Connect with leads on their favourite platform',
+        subDescription: 'With all the important WhatsApp features and automation',
+        subMenu: [
+            {
+                name: 'Templates', 
+                description: 'To send personalised messages to leads within seconds',
+                image: 'connect_templates'
+            },
+            {
+                name: '1-Click', 
+                description: 'To send WhatsApp messages without saving numbers',
+                image: 'connect_1_click'
+            },
+            {
+                name: 'Official API', 
+                description: 'To send WhatsApp messages with buttons',
+                image: 'connect_official_api'
+            },
+            {
+                name: 'Chatbot', 
+                description: 'To engage with leads 24x7',
+                image: 'connect_chatbot'
+            },
+            {
+                name: 'Broadcasting', 
+                description: 'To engage multiple leads in one click',
+                image: 'connect_broadcasting'
+            }
+        ]
     }
   ];
   

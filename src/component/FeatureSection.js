@@ -20,6 +20,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 function FeatureSection(props) {
 
+    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+
     const [updownArrow, setUpDownArrow] = useState(false);
     const [animatePhone, setAnimatePhone] = useState(false);
     const currentSubMenuIndex = useRef(0);
@@ -33,7 +35,9 @@ function FeatureSection(props) {
     const sectionHeaderRef = useRef(null);
     const sectionSubHeaderRef = useRef(null);
     const featureDescriptionRef = useRef(null);
+    const scrollYValue = useRef(null);
     const cardRef = useRef(null);
+  
 
 
     const downIconClick= () => {
@@ -123,8 +127,9 @@ function FeatureSection(props) {
 
               gsap.to(cardRef.current, {
                 width: "100vw",
-                borderRadius:"0px",
                 ease: 'power5.out',
+                // border: "solid 0.1px rgb(0, 0, 0)",
+                borderRadius: "0px",
                 scrollTrigger: {
                   trigger: cardRef.current,
                   start: 'top 50%',
@@ -139,6 +144,29 @@ function FeatureSection(props) {
     }
 
       , []);
+
+
+      useEffect(() => {
+        const handleMouseMove = (e) => {
+          setMousePosition({ x: e.clientX - document.getElementsByClassName("feature-section")[props.id-1].getBoundingClientRect().left - 50, y: e.clientY-document.getElementsByClassName("feature-section")[props.id-1].getBoundingClientRect().top -50});
+          // console.log(e.clientX, e.clientY);
+        };
+
+        const handleScrollMove= () => {
+          const scrolledBy =  window.scrollY - scrollYValue.current;
+          scrollYValue.current = window.scrollY;
+          console.log("scrolled", window.scrollY, mousePosition.x, mousePosition.y);
+          setMousePosition(prevPosition => ({ x: prevPosition.x, y: prevPosition.y + scrolledBy }));
+        }
+    
+        document.addEventListener('mousemove', handleMouseMove);
+        document.addEventListener('scroll', handleScrollMove);
+    
+        return () => {
+          document.removeEventListener('mousemove', handleMouseMove);
+          document.removeEventListener('scroll', handleScrollMove);
+        };
+      }, []);
     
 
     
@@ -146,6 +174,7 @@ function FeatureSection(props) {
     return (
         <div className='feature-section-parent'>
         <div ref={cardRef} className='feature-section'>
+        <div className="pointer-light"style={{ left: `${mousePosition.x}px`, top: `${mousePosition.y}px` }} ></div>
             <div className='left-section'>
                 <div ref={sectionHeaderRef} className='section-header'>{props.description}</div>
                 <div ref={sectionSubHeaderRef} className='sub-heading'>{props.subDescription}</div>
@@ -159,9 +188,11 @@ function FeatureSection(props) {
                     </div>
                     <div className='feature-headings-section'>
                         {props.subMenu.map((item, index) => (
-                            <div key={index} className={`feature-heading ${index === currentSubMenuIndex.current ? 'feature-selected' : ''}`}>
-                            {item.name}
-                            </div>
+                            <>
+                              <div className={`feature-button ${index === currentSubMenuIndex.current ? 'feature-button-selected' : ''}`}>
+                                  <div key={index} className={`feature-heading ${index === currentSubMenuIndex.current ? 'feature-selected' : ''}`}>{item.name}</div>
+                              </div>
+                            </>
                         ))}
                     </div>
                 </div>
@@ -175,7 +206,9 @@ function FeatureSection(props) {
                     <div class="phone-drops-bg"></div>
                 </div> */}
                 <div ref={featureDescriptionRef} className='feature-description'>{props.subMenu[currentSubMenuIndex.current].description}</div>
-                <div className='get-staretd-button'>Get Started</div>
+                <div className='get-staretd-button'>
+                  <div className='btn-content'>Get Started</div>
+                </div>
             </div>
         </div>
         </div>
