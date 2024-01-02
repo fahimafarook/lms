@@ -22,21 +22,21 @@
 }
 
 .product-landing{
-    height: 95vh;
+    height: 100vh;
     overflow-x: hidden;
     width: 100vw;
     background-color: black;
-    /* animation: changeBackground 1s linear 5s infinite; */
+    animation: changeBackgrounds 4s linear 2s infinite;
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 
-@keyframes changeBackground {
+@keyframes changeBackgrounds {
     0% { background-image: url("../assert/images/bg1.png"); }
     5.33% { background-image: url("../assert/images/bg2.png"); }
     10.66% { background-image: url("../assert/images/bg3.png"); }
-    15% { background-image: url("../assert/images/bg6.png"); }
-    20% { background-image: url("../assert/images/bg4.png"); }
-    25%, 100% { background-image: url("../assert/images/bg4.png"); }
+    15% { background-image: url("../assert/images/bg4.png"); }
+    20% { background-image: url("../assert/images/bg1.png"); }
+    25%, 100% { background-image: none; }
 }
 
 
