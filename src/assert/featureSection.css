@@ -144,6 +144,8 @@
     border-radius: 15px;
     background-color: transparent;
     overflow-x: hidden;
+    overflow-y: hidden;
+    
 }
 
 .left-section{
@@ -241,8 +243,8 @@
     position: absolute;
     left: -0.05vw;
     transition: all 0.5s ease;
-    background-color: rgb(67, 0, 129);
-    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.2), -4px 0 8px rgba(0, 0, 0, 0.2);
+    background-color: rgb(73, 0, 141);
+    box-shadow: 4px 0 16px rgba(255, 255, 255, 0.2), -4px 0 8px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -275,12 +277,17 @@
 }
 
 .feature-button-selected {
-    background: linear-gradient(145deg, #6557ff, #aa3fff 48%, #fcf74a 76%, #f8522e 92%);
+    /* background: linear-gradient(145deg, #6557ff, #aa3fff 48%, #fcf74a 76%, #f8522e 92%); */
 }
 
 .feature-selected {
-    background-color: black;
+    /* background-color: black; */
     color: white;
+    border: solid 1px rgb(200, 244, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(90, 196, 253, 0.3);
+    background-color: transparent;
+    font-size: 110%;
 }
 
 
@@ -462,7 +469,7 @@
     background-color: transparent;
     margin-left: 5vw;
     margin-top: 7vh;
-   scale: 0.9;
+   scale: 0.8;
   }
 
 
