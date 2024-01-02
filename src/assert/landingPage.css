@@ -64,7 +64,7 @@
 
 .top-bar{
     font-family : "BebasNeue";
-    font-size: 90%;
+    font-size: 100%;
     letter-spacing: 0.75px;
     height: fit-content;
     display: flex;
@@ -74,7 +74,7 @@
     font-weight: 100;
  
     color: rgb(225, 225, 225);
-    /* box-shadow: 0px 4px 16px rgba(170, 42, 255, 0.2); */
+    box-shadow: 0px 4px 16px rgba(170, 42, 255, 0.2);
     align-items: center;
     border-radius: 25px 25px 25px 25px;
     position: relative;
