@@ -102,6 +102,11 @@
      width: fit-content; */
      color: rgb(255, 255, 255);
 
+    background: linear-gradient(145deg, #6557ff, #aa3fff 48%, #fcf74a 76%, #f8522e 92%);
+     -webkit-background-clip: text;
+     background-clip: text;
+     color: transparent;
+
      
 
 }
