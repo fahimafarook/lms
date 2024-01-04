@@ -5,22 +5,34 @@ import data from '../data/allFeatures'
 function AllFeatures() {
 /*
     let fixedDisplay;
+    let allFeatureSection;
 
     const handleScroll = () => {
         // console.log(Math.round(fixedDisplay.getBoundingClientRect().top), Math.round((window.innerHeight/2)-(fixedDisplay.getBoundingClientRect().height/2)), (window.innerHeight/2), (fixedDisplay.getBoundingClientRect().height/2));
         // console.log(fixedDisplay.getBoundingClientRect().top == (window.innerHeight/2)-(fixedDisplay.getBoundingClientRect().height/2))
 
-        if(Math.round(fixedDisplay.getBoundingClientRect().top) == Math.round((window.innerHeight/2)-(fixedDisplay.getBoundingClientRect().height/2)))
-        console.log("attained========================================================================");
-        // fixedDisplay.style.position = "absolute";
-        // fixedDisplay.style.width = "50%";
-        // fixedDisplay.style.height = "70%";
+        // if(Math.round(fixedDisplay.getBoundingClientRect().top) <= Math.round((window.innerHeight/2)-(fixedDisplay.getBoundingClientRect().height/2))){
+        //     console.log("attained========================================================================");
+            
+        // }
+        if(allFeatureSection.getBoundingClientRect().top < (window.innerHeight / 15)) {
+            fixedDisplay.style.position = "fixed";
+            fixedDisplay.style.top = "15vh";
+            fixedDisplay.style.right = "5vw";
+            fixedDisplay.style.width = "50vw";
+            fixedDisplay.style.height = "70vh";
+        }
+        else{
+            fixedDisplay.style.position = "relative";
+        }
+
     };
       
 
     useEffect(() => {
 
-        fixedDisplay = document.getElementsByClassName("display-container")[0]
+        fixedDisplay = document.getElementsByClassName("display-container")[0];
+        allFeatureSection = document.getElementsByClassName("features-left-section")[0];
         window.addEventListener('scroll', handleScroll);
         return () => {
           window.removeEventListener('scroll', handleScroll);
@@ -30,7 +42,7 @@ function AllFeatures() {
     return (
         <div>
             <div className='all-features-section'>
-                <div className="features-page-heading">Pick the features that you need</div>
+                <div className="features-page-heading">Check on the features you need</div>
                 <div className='all-features'>
                     <div className='features-left-section'>
                     {
