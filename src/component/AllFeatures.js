@@ -3,7 +3,7 @@ import '../assert/allFeatures.css'
 import data from '../data/allFeatures'
 
 function AllFeatures() {
-
+/*
     let fixedDisplay;
 
     const handleScroll = () => {
@@ -26,7 +26,7 @@ function AllFeatures() {
           window.removeEventListener('scroll', handleScroll);
         };
     }, []); 
-
+*/
     return (
         <div>
             <div className='all-features-section'>
