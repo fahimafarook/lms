@@ -56,11 +56,14 @@
 }
 
 .features-right-section{
-    height: 70vh;
+    height: 100vh;
     width: 60vw;
+    position: sticky;
+    top:0;
     display: flex;
-    justify-content:end;
+    justify-content:center;
     align-items: center;
+
     /* background-color: #453fff; */
 }
 
