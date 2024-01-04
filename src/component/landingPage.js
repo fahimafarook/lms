@@ -7,6 +7,8 @@ import logo from "../assert/images/logo.png";
 import FeatureSection from "../component/FeatureSection"
 import data from '../data/featureDetails';
 import Spline from '@splinetool/react-spline';
+import AllFeatures from '../component/AllFeatures'
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -49,17 +51,6 @@ function LandingPage() {
     return (
         <div className='landing-page'>
           <div className='product-landing'>
-            <div className='row d-flex top-bar justify-content-between'>
-              <div className = "col-md-2 logo">Asgards</div>
-              <div className="row col-md-9 justify-content-around">
-                  <div className="top-bar-item col-2">Feature</div>
-                  <div className="top-bar-item col-2">Pricing</div>
-                  <div className="top-bar-item col-2">FAQ</div>
-                  <div className="top-bar-item col-2 top-bar-item-selected">Contact</div>
-                  <div className="top-bar-item col-2">Get Started</div>
-                </div>
-            </div>
-
               <div className='container-section'>
                 <h1 className='product-tagline trigger-1'>Your Smart</h1>
                 <div className='text-container trigger-1'>
@@ -83,9 +74,13 @@ function LandingPage() {
             </div> */}
         </div>
 
+        <AllFeatures></AllFeatures>
+
          {data.map((item) => (
             <FeatureSection key={item.id} {...item} />
           ))}
+
+         
 
           <div className='spacing'></div>
         </div>

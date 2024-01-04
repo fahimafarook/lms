@@ -283,9 +283,9 @@
 .feature-selected {
     /* background-color: black; */
     color: white;
-    border: solid 1px rgb(200, 244, 255);
+    border: solid 1px rgb(255, 255, 255);
     border-radius: 10px;
-    box-shadow: 0 0 20px 0 rgba(90, 196, 253, 0.3);
+    box-shadow: 0 0 20px 0 rgba(191, 123, 255, 0.3);
     background-color: transparent;
     font-size: 110%;
 }
@@ -399,20 +399,24 @@
     color: rgb(255, 255, 255);
     z-index: 1;
     margin-bottom: 10vh;
-    padding: 2px;
+    padding: 1px;
     background-color:  #d1d1d1;
+    background: linear-gradient(145deg, #6557ff, #aa3fff 48%, #fcf74a 76%, #f8522e 92%);
     /* box-shadow: 0 0 20px 0 rgba(255, 105, 105, 0.2); */
+    transition: ease all 0.5s;
     
 }
 
 .btn-content {
     /* position: absolute; */
-    background-color:  #d1d1d1;
+    background-color:  #000000;
     border-radius: 25px;
     padding: 15px 20px;
-    color: #000;
-    
+    color: #ffffff;
+}
 
+.get-staretd-button:hover{
+    box-shadow: 0 0 23px 0 rgba(255, 105, 105, 0.5);
 }
 
   .corner-circle {

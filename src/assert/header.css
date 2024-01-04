@@ -1,0 +1,73 @@
+.logo{
+    margin-left: 5vh;
+    font-size: 130%;
+    color: #5d5d5d;
+    height: fit-content;
+    border-radius: 25px;
+    background-color: #000000;
+}
+
+.top-bar{
+    width: 100vw;
+    font-family : "BebasNeue";
+    font-size: 100%;
+    letter-spacing: 0.75px;
+    height: fit-content;
+    display: flex;
+    font-weight: 300;
+    right: 0;
+    font-family: "WixMadeforDisplay-regular";
+    font-weight: 100;
+    color: rgb(225, 225, 225);
+    box-shadow: 0px 4px 16px rgba(170, 42, 255, 0.2);
+    align-items: center;
+    position: relative;
+    background-color: #000000;
+    overflow-x: hidden;
+}
+
+.header-conents{
+  padding: 0;
+  margin-right: 0px;
+  margin-left: 0px;
+  background-color: #000000;
+}
+
+
+.top-bar-item {
+    padding: 2vmin;
+    margin: 5px;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+    width: fit-content;
+  }
+
+  .top-bar-item::after{
+    top:1.5px;
+    position: relative;
+    width: 1px;
+    height: 2px;
+    background-color: #000000;
+    content: "";
+    display: block;
+    left: 50%;
+  }
+
+
+  .top-bar-item:hover::after {
+    background: linear-gradient(100deg, #6557ff, #aa3fff 48%, #fcf74a 76%, #f8522e 92%);
+    animation: expandUnderline  1.5s forwards;
+    box-shadow: 0px 8px 16px rgb(221, 127, 255);
+  }
+
+  @keyframes expandUnderline {
+    0%{
+
+    }
+    100%{
+        width: 50%;
+        left: 25%;
+    }
+  
+  }

@@ -1,0 +1,124 @@
+/* @font-face {
+    font-family: "WixMadeforDisplay-Regular";
+    src: url(.//fonts/WixMadeforDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: "WixMadeforDisplay-Bold";
+    src: url(.//fonts/WixMadeforDisplay-Bold.ttf);
+}
+
+@font-face {
+    font-family: "WixMadeforDisplay-extraBold";
+    src: url(.//fonts/WixMadeforDisplay-ExtraBold.ttf);
+} */
+
+
+
+.all-features-section{
+    /* height: 200vh; */
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    padding-top: 4min;
+    padding-left: 5vmin;
+    padding-right: 5vmin;
+    padding-top: 5vh;
+}
+
+.features-page-heading{
+    width: fit-content;
+    font-size: 300%;
+    font-family: "WixMadeforDisplay-bold";
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: #e0e0e0;
+    background: linear-gradient(145deg, #6557ff, #aa3fff 48%, #fcf74a 76%, #f8522e 92%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.all-features{
+    padding-top: 5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.features-left-section{
+    /* height: 100vh; */
+    width: 40vw;
+    /* background-color: #300058; */
+}
+
+.features-right-section{
+    height: 70vh;
+    width: 60vw;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    /* background-color: #453fff; */
+}
+
+
+.feature-list-container{
+    margin-bottom: 5vh;
+    background-color: rgb(15, 15, 15);
+    padding: 3vmin;
+    border-radius: 10px;
+}
+
+.feature-heading-name{
+    padding: 2vmin;
+    font-size: 170%;
+    color: transparent;
+    font-family: "WixMadeforDisplay-regular";
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-transform:uppercase;
+
+    -webkit-text-stroke: 0.5px  rgb(219, 161, 255);
+    -webkit-text-fill-color:transparent;
+}
+
+
+.sub-heading-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feature-names{
+    font-size: 130%;
+    color: #e2e2e2;
+    /* border: solid 0.1px rgb(50, 50, 50); */
+    border-radius: 10px;
+    padding: 7px 15px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    font-family: "WixMadeforDisplay-Regular";
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    box-shadow: 0 0 10px 0 rgba(191, 123, 255, 0.3);
+    box-shadow: 0 3px 8px rgba(211, 91, 255, 0.2);
+}
+
+.display-container-border{
+    height: 70vh;
+    width: 50vw;
+    
+    /* background: linear-gradient(100deg, #6557ff, #aa3fff 48%, #fcf74a 76%, #f8522e 92%); */
+    padding: 2px;
+    border-radius: 5px;
+    z-index: 0;
+}
+
+.display-container{
+    background-color: rgb(50, 49, 49);
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}

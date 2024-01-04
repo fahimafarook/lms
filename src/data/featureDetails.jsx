@@ -63,38 +63,33 @@ const features = [
     
     {
         id: 3,
-        name: 'Connect with leads',
-        description: 'Connect with leads on their favourite platform',
+        name: 'Get leads',
+        description: 'Get leads from everywhere in one place',
         subDescription: 'With all the important WhatsApp features and automation',
         subMenu: [
             {
-                name: 'Templates', 
-                description: 'To send personalised messages to leads within seconds',
+                name: 'Website', 
+                description: 'Capture website leads in real-time',
                 image: 'connect_templates'
             },
             {
-                name: '1-Click', 
-                description: 'To send WhatsApp messages without saving numbers',
+                name: 'Facebook', 
+                description: 'Capture and instantly engage with Facebook leads using CRM',
                 image: 'connect_1_click'
             },
             {
-                name: 'Official API', 
-                description: 'To send WhatsApp messages with buttons',
+                name: 'WhatsApp', 
+                description: 'Capture leads from WhatsApp messages',
                 image: 'connect_official_api'
             },
             {
-                name: 'Chatbot', 
-                description: 'To engage with leads 24x7',
+                name: 'Others', 
+                description: 'IndiaMart, Justdial and 16 other portals',
                 image: 'connect_chatbot'
             },
-            {
-                name: 'Broadcasting', 
-                description: 'To engage multiple leads in one click',
-                image: 'connect_broadcasting'
-            }
         ]
     }
-  ];
+  ]; 
   
   export default features;
   

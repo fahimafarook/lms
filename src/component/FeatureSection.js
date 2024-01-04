@@ -62,7 +62,7 @@ function FeatureSection(props) {
     }
 
     useEffect(()=>{
-        
+        {console.log("props", props)}
         featureBarHeight.current = document.getElementsByClassName("feature-bar")[props.id - 1].getBoundingClientRect().height;
         featureProgressBar.current = document.getElementsByClassName("feature-progress-bar")[props.id - 1];
         featureProgressBar.current.style.height = `${featureBarHeight.current/subMenuLength * (currentSubMenuIndex.current+1)}px`;
@@ -149,13 +149,11 @@ function FeatureSection(props) {
       useEffect(() => {
         const handleMouseMove = (e) => {
           setMousePosition({ x: e.clientX - document.getElementsByClassName("feature-section")[props.id-1].getBoundingClientRect().left - 50, y: e.clientY-document.getElementsByClassName("feature-section")[props.id-1].getBoundingClientRect().top -50});
-          // console.log(e.clientX, e.clientY);
         };
 
         const handleScrollMove= () => {
           const scrolledBy =  window.scrollY - scrollYValue.current;
           scrollYValue.current = window.scrollY;
-          console.log("scrolled", window.scrollY, mousePosition.x, mousePosition.y);
           setMousePosition(prevPosition => ({ x: prevPosition.x, y: prevPosition.y + scrolledBy }));
         }
     
