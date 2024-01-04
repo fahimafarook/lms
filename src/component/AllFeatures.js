@@ -1,8 +1,12 @@
 import React, { useEffect } from 'react';
 import '../assert/allFeatures.css'
 import data from '../data/allFeatures'
+import Spline from '@splinetool/react-spline';
 
 function AllFeatures() {
+
+    const catorgryIndex = 0;
+    const selectedFeatureIndex= 0;
 /*
     let fixedDisplay;
     let allFeatureSection;
@@ -67,6 +71,35 @@ function AllFeatures() {
                     <div className='features-right-section'>
                         <div className='display-container-border'>
                             <div className='display-container'>
+                                <div className='card-left-section'>
+                                    <div className='card-heading'>{data[0].subMenu[0].name}</div>
+                                    <h1 className='card-description'>{data[0].subMenu[0].description}</h1>
+                                    {
+                                        data[0].subMenu[0].points.map((point, index) => {
+                                            // console.log("point",point);
+                                            return (
+                                            <div className='points-container'>
+                                                 <img className='arrow-symbol'></img>
+                                                 <div key={index} className='card-points'>{point}</div>
+                                            </div>
+                                           
+                                            )
+                                        })
+                                    }
+                                   <div className='button-parent'>
+                                   <div className='get-started-button'>
+                                    get started
+                                    </div>
+                                   </div>
+                                   
+                                </div>
+
+                                <div className='card-right-section'>
+                                     <div className='card-phone-image'>
+                                        <Spline  className="card-mobile-3d" scene="https://prod.spline.design/c4Gyp4-hugu5H3xK/scene.splinecode" />
+                                     </div>
+                                     
+                                </div>
                             </div>
                         </div>
                     </div>
