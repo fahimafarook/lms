@@ -163,13 +163,13 @@
 
 .card-description{
     
-    font-size: 150%;
+    font-size: 170%;
     font-family: "WixMadeforDisplay-bold";
     letter-spacing: 0.5px;
     word-spacing: 1px;
     color: rgb(20, 20, 20);
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
 }
 
 .points-container{
@@ -183,12 +183,12 @@
 
 
 .card-points{
-    font-size: 130%;
+    font-size: 140%;
     font-family: "WixMadeforDisplay-regular";
     letter-spacing: 1px;
     word-spacing: 2px;
-    color: rgb(189, 189, 189);
-    padding-bottom: 4px;
+    color: rgb(221, 221, 221);
+    padding-bottom: 1.5vh;
 }
 
 .card-points::before{
@@ -197,7 +197,7 @@
 }
 
 .button-parent{
-    padding-top: 5%;
+    margin-top: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -212,7 +212,7 @@
     background: transparent;
     border: solid 1px rgb(221, 221, 221);
     padding: 2% 4%;
-    border-radius: 15px;
+    border-radius: 5vh;
     color: rgb(255, 255, 255);
 }
 
