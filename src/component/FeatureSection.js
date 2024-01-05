@@ -15,6 +15,7 @@ import icon5 from '../assert/images/icon5.png';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Spline from '@splinetool/react-spline';
+import GradientButton from './common/GradientButton';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -62,7 +63,6 @@ function FeatureSection(props) {
     }
 
     useEffect(()=>{
-        {console.log("props", props)}
         featureBarHeight.current = document.getElementsByClassName("feature-bar")[props.id - 1].getBoundingClientRect().height;
         featureProgressBar.current = document.getElementsByClassName("feature-progress-bar")[props.id - 1];
         featureProgressBar.current.style.height = `${featureBarHeight.current/subMenuLength * (currentSubMenuIndex.current+1)}px`;
@@ -126,10 +126,10 @@ function FeatureSection(props) {
               });
 
               gsap.to(cardRef.current, {
-                width: "100vw",
+                width: "90vw",
                 ease: 'power5.out',
                 // border: "solid 0.1px rgb(0, 0, 0)",
-                borderRadius: "0px",
+                // borderRadius: "0px",
                 scrollTrigger: {
                   trigger: cardRef.current,
                   start: 'top 50%',
@@ -186,11 +186,9 @@ function FeatureSection(props) {
                     </div>
                     <div className='feature-headings-section'>
                         {props.subMenu.map((item, index) => (
-                            <>
-                              <div className={`feature-button ${index === currentSubMenuIndex.current ? 'feature-button-selected' : ''}`}>
+                              <div key={index} className={`feature-button ${index === currentSubMenuIndex.current ? 'feature-button-selected' : ''}`}>
                                   <div key={index} className={`feature-heading ${index === currentSubMenuIndex.current ? 'feature-selected' : ''}`}>{item.name}</div>
                               </div>
-                            </>
                         ))}
                     </div>
                 </div>
@@ -204,9 +202,7 @@ function FeatureSection(props) {
                     <div class="phone-drops-bg"></div>
                 </div> */}
                 <div ref={featureDescriptionRef} className='feature-description'>{props.subMenu[currentSubMenuIndex.current].description}</div>
-                <div className='get-staretd-button'>
-                  <div className='btn-content'>Get Started</div>
-                </div>
+                <GradientButton className='get-staretd-button' name = "Get Started"/>
             </div>
         </div>
         </div>

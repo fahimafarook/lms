@@ -8,6 +8,7 @@ import FeatureSection from "../component/FeatureSection"
 import data from '../data/featureDetails';
 import Spline from '@splinetool/react-spline';
 import AllFeatures from '../component/AllFeatures'
+import GradientButton from '../component/common/GradientButton'
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -60,9 +61,8 @@ function LandingPage() {
                 </div>
                 <h1 className='product-tagline trigger-1'>software.</h1>
                 <div className='paragraph trigger-1'>Collaborate, manage projects and reach new productivity peaks. From high rises to the home office, accomplishit all with Zaiask!</div>
-                <button class="book-Demo">
-                  <div className='btn-content-demo'>Book Demo</div>
-                </button>
+
+                <GradientButton className = "book-demo-button" name ={"Book Demo"}></GradientButton>
               </div>
             
 
@@ -73,8 +73,6 @@ function LandingPage() {
               style={{ width: '100%', height: '100%' }} />
             </div> */}
         </div>
-
-        <AllFeatures></AllFeatures>
 
          {data.map((item) => (
             <FeatureSection key={item.id} {...item} />

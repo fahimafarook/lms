@@ -1,17 +1,22 @@
 import React from 'react';
 import '../assert/header.css'
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
         <div className='container-fluid'>
             <div className='row d-flex top-bar justify-content-between'>
-              <div className = "col-md-2 logo">Asgards</div>
-              <div className="row col-md-9 justify-content-around header-conents p-0">
-                  <div className="top-bar-item col-2">Feature</div>
-                  <div className="top-bar-item col-2">Pricing</div>
-                  <div className="top-bar-item col-2">FAQ</div>
-                  <div className="top-bar-item col-2 top-bar-item-selected">Contact</div>
-                  <div className="top-bar-item col-2">Get Started</div>
+              <div className = "col-md-2 logo">
+                 <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>Asgards</Link> 
+              </div>
+              <div className="col-md-9 header-conents">
+                  <div className="top-bar-item ">
+                    <Link to="/features" style={{ textDecoration: 'none', color: 'inherit' }}>Features</Link>
+                  </div>
+                  <div className="top-bar-item ">Pricing</div>
+                  <div className="top-bar-item ">FAQ</div>
+                  <div className="top-bar-item  top-bar-item-selected">Contact</div>
+                  <div className="top-bar-item ">Get Started</div>
                 </div>
             </div>
             

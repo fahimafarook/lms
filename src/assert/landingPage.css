@@ -156,30 +156,9 @@
     color: #8b8b8b;
 }
 
-.book-Demo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 500;
+.book-demo-button{
     margin-top: 5vh;
     margin-left: 10vw;
-    font-size: 110%;
-    padding: 1px;
-    border-radius: 25px;
-    background: linear-gradient(100deg, #6557ff, #aa3fff 48%, #fcf74a 76%, #f8522e 92%);
-    transition: ease all 0.5s;
-    border: none;
-}
-
-.book-Demo:hover{
-    box-shadow: 0 0 23px 0 rgba(255, 105, 105, 0.5);
-}
-
-.btn-content-demo{
-    background-color: #000000;
-    color: white;
-    padding: 10px 25px;
-    border-radius: 25px;
 }
 
 .lms-vid-container {

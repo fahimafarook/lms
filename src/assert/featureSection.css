@@ -57,7 +57,7 @@
     overflow: hidden;
     height: 90vh;
     width: 85vw;
-    border-radius: 25px;
+    border-radius: 15px;
     background: rgb(0, 0, 0);
     background: linear-gradient(150deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, ) 100%);
     margin: 0;
@@ -384,39 +384,8 @@
 .get-staretd-button{
     text-align: center;
     align-self: center;
-    border-radius: 25px;
-    font-family: "WixMadeforDisplay-regular";
-    letter-spacing: 1px;
-    word-spacing: 2px;
-    font-weight: 700;
-    font-size: 90%;
-    text-transform: capitalize;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    background: rgb(238,174,202);
-    background: linear-gradient(150deg, rgb(247, 182, 210)0%, rgb(148, 233, 217) 100%);
-    color: rgb(45, 45, 45);
-    background:  rgb(234, 234, 234);
-    color: rgb(255, 255, 255);
     z-index: 1;
     margin-bottom: 10vh;
-    padding: 1px;
-    background-color:  #d1d1d1;
-    background: linear-gradient(145deg, #6557ff, #aa3fff 48%, #fcf74a 76%, #f8522e 92%);
-    /* box-shadow: 0 0 20px 0 rgba(255, 105, 105, 0.2); */
-    transition: ease all 0.5s;
-    
-}
-
-.btn-content {
-    /* position: absolute; */
-    background-color:  #000000;
-    border-radius: 25px;
-    padding: 15px 20px;
-    color: #ffffff;
-}
-
-.get-staretd-button:hover{
-    box-shadow: 0 0 23px 0 rgba(255, 105, 105, 0.5);
 }
 
   .corner-circle {
@@ -426,12 +395,9 @@
     right: 200px;
     bottom: -50px;
     right: -50px;
-
     background: radial-gradient(closest-side, #a6e0f9, #ffffff, white);
     background: radial-gradient(circle closest-side at center, #ccc7ff 80%, transparent 100%, transparent);
     transition: all 3s ease;
-
-
 }
 
 

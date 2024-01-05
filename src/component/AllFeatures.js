@@ -6,6 +6,7 @@ import gradientBg from '../assert/images/gradBg.png';
 import tickIcon from '../assert/images/iconTickColor.png';
 import btnArrow from '../assert/images/iconArrowRed.png';
 import notepadIcon from '../assert/images/iconNotepad.png';
+import GradientButton from './common/GradientButton';
 
 function AllFeatures() {
 
@@ -100,11 +101,8 @@ function AllFeatures() {
                         
                             </div>
                         ))
-                    }
-                    
+                    }   
                     </div>
-
-
                     
                     <div className='features-right-section'>
                         <div className='display-container-border'>
@@ -118,9 +116,8 @@ function AllFeatures() {
                                     <h1 className='card-description'>{data[0].subMenu[0].description}</h1>
                                     {
                                         data[0].subMenu[0].points.map((point, index) => {
-                                            // console.log("point",point);
                                             return (
-                                            <div className='points-container'>
+                                            <div key = {index} className='points-container'>
                                                <img className='arrow-symbol' src={tickIcon}/>
                                                  <div key={index} className='card-points'>{point}</div>
                                             </div>
@@ -129,12 +126,7 @@ function AllFeatures() {
                                         })
                                     }
 
-                                    <div className='card-get-started-btn'>
-                                        <div className='card-btn-content'>
-                                            Get Started
-                                            <img className='card-btn-arrow' src={btnArrow}></img>
-                                        </div>
-                                    </div>
+                                    <GradientButton name ="Get Started" className = "card-get-started-btn"/>
                                 </div>
 
                                 <div className='card-right-section'>
