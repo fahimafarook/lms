@@ -72,14 +72,18 @@ function AllFeatures() {
                         <div className='display-container-border'>
                             <div className='display-container'>
                                 <div className='card-left-section'>
-                                    <div className='card-heading'>{data[0].subMenu[0].name}</div>
+                                    <div className='card-header-container'>
+                                        <div className='card-header-icons'></div>
+                                        <div className='card-heading'>{data[0].subMenu[0].name}</div>
+                                    </div>
+                                    
                                     <h1 className='card-description'>{data[0].subMenu[0].description}</h1>
                                     {
                                         data[0].subMenu[0].points.map((point, index) => {
                                             // console.log("point",point);
                                             return (
                                             <div className='points-container'>
-                                                 <img className='arrow-symbol'></img>
+                                               <img className='arrow-symbol' style={{border: "none", outline: "none"}} />
                                                  <div key={index} className='card-points'>{point}</div>
                                             </div>
                                            

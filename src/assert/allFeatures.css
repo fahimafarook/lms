@@ -97,7 +97,6 @@
 .feature-names{
     font-size: 130%;
     color: #e2e2e2;
-    /* border: solid 0.1px rgb(50, 50, 50); */
     border-radius: 10px;
     padding: 7px 15px;
     margin-right: 10px;
@@ -113,11 +112,13 @@
     height: 80vh;
     width: 55vw;
     
-    background: linear-gradient(140deg, #6557ff, #aa3fff 48%, #9aa322 76%, #f8522e 92%);
+    /* background: linear-gradient(140deg, rgba(101, 87, 255, 0.2), rgba(170, 63, 255, 0.2) 48%, rgba(154, 163, 34, 0.2) 76%, rgba(248, 82, 46, 0.2) 92%); */
+    background: linear-gradient(170deg, rgb(76, 0, 163, 0.1) 50%, rgb(17, 17, 17) 78%);
     background-color: #424242;
     padding: 0px;
     border-radius: 10px;
     z-index: 0;
+
 
      /* background-image: url('path/to/your/image.jpg');
     background-size: cover;
@@ -126,7 +127,7 @@
 }
 
 .display-container{
-    background-color: rgba(57, 57, 57, 0.8);
+    /* background-color: rgba(57, 57, 57, 0.8); */
     height: 100%;
     width: 100%;
     border-radius: 10px;
@@ -147,10 +148,28 @@
     /* background-color: #6557ff; */
 }
 
-.card-heading{
+.card-header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: fit-content;
+}
+
+.card-header-icons{
+    background: url('../assert//images/excelIcon.png');
+    height: 6vh;
+    width: 6vh;
+    padding-right: 1vw;
+    background-repeat: no-repeat; 
+}
+
+
+.card-heading{
+    padding-left: 10px;
+    height: fit-content;
     font-size: 250%;
-    font-family: "WixMadeforDisplay-bold";
+    font-family: "WixMadeforDisplay-extraBold";
     letter-spacing: 1px;
     word-spacing: 2px;
     color: rgb(7, 7, 7);
@@ -162,13 +181,12 @@
 }
 
 .card-description{
-    
-    font-size: 170%;
-    font-family: "WixMadeforDisplay-bold";
+    font-size: 150%;
+    font-family: "WixMadeforDisplay-extraBold";
     letter-spacing: 0.5px;
     word-spacing: 1px;
-    color: rgb(20, 20, 20);
-    padding-top: 3vh;
+    color: rgb(24, 24, 24);
+    padding-top: 1vh;
     padding-bottom: 3vh;
 }
 
@@ -178,9 +196,18 @@
 }
 
 .arrow-symbol{
-    src: url("../assert/images/rightArrow.png");
-}
+    background: url('../assert//images/tickIcon1.png');
+    height: 5vh;
+    width: 5vh;
+    background-repeat: no-repeat; 
+    background-color: transparent;
+    border: none;
+    border: none;
+    outline: none;
 
+    border: none !important;
+    outline: none !important;
+}
 
 .card-points{
     font-size: 140%;
@@ -189,11 +216,6 @@
     word-spacing: 2px;
     color: rgb(221, 221, 221);
     padding-bottom: 1.5vh;
-}
-
-.card-points::before{
-    content: " → ";
-    color: #ffffff;
 }
 
 .button-parent{
@@ -210,10 +232,10 @@
     word-spacing: 2px;
     width: fit-content;
     background: transparent;
-    border: solid 1px rgb(221, 221, 221);
     padding: 2% 4%;
     border-radius: 5vh;
-    color: rgb(255, 255, 255);
+    color: rgb(241, 236, 236);
+    border: solid 1px rgb(255, 255, 255);
 }
 
 .get-started-button:hover{
