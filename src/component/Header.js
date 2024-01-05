@@ -3,7 +3,7 @@ import '../assert/header.css'
 
 function Header() {
     return (
-        <div>
+        <div className='container-fluid'>
             <div className='row d-flex top-bar justify-content-between'>
               <div className = "col-md-2 logo">Asgards</div>
               <div className="row col-md-9 justify-content-around header-conents p-0">
