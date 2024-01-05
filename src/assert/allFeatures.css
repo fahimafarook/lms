@@ -84,9 +84,10 @@
     letter-spacing: 1px;
     word-spacing: 2px;
     text-transform:uppercase;
-    -webkit-text-stroke: 0.5px  rgb(190, 86, 255);
+    /* -webkit-text-stroke: 0.5px  rgb(190, 86, 255); */
     -webkit-text-fill-color:transparent;
-    background-image: linear-gradient(to right, #6a00ff, #ff9500);
+    background: linear-gradient(145deg, #6557ff, #aa3fff 28%, #fcf74a 46%, #f8522e 62%);
+    /* background: linear-gradient(110deg, #6557ff, #aa3fff 18%, #fcf74a 36%, #9b0000 55%); */
     -webkit-background-clip: text;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
@@ -150,6 +151,7 @@
     background-image: url('./images/gradBg.png');
     background-size: cover;
     background-repeat: no-repeat;
+     /* background: linear-gradient(-10deg, rgba(74,43,45,1) 10%, rgba(76,36,89,1) 20%, rgba(0,0,0,1) 35%); */
 }
 
 .display-container{
