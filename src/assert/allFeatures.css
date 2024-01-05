@@ -99,7 +99,7 @@
 
 .feature-names{
     font-size: 130%;
-    color: #e2e2e2;
+    color: #ffffff;
     border-radius: 10px;
     padding: 7px 15px;
     margin-right: 10px;
@@ -109,7 +109,7 @@
     word-spacing: 2px;
     border: solid 0.1px rgb(44, 44, 44);
     /* box-shadow: 0 0 10px 0 rgba(191, 123, 255, 0.3); */
-    box-shadow: 0 3px 8px rgba(240, 41, 41, 0.1);
+    box-shadow: 0 3px 4px rgba(118, 118, 118, 0.1);
     align-items: center;
     /* background-color: blue; */
     /* width:max-content; */
@@ -204,7 +204,7 @@
     letter-spacing: 1px;
     word-spacing: 2px;
     color: rgb(7, 7, 7);
-    color: rgb(221, 221, 221);
+    color: rgb(219, 219, 219);
     /* background: linear-gradient(145deg, #6557ff, #aa3fff 48%, #fcf74a 76%, #f8522e 92%);
     -webkit-background-clip: text;
     background-clip: text;
