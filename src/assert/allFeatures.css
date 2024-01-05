@@ -129,7 +129,7 @@
     /* background: linear-gradient(140deg, rgba(101, 87, 255, 0.2), rgba(170, 63, 255, 0.2) 48%, rgba(154, 163, 34, 0.2) 76%, rgba(248, 82, 46, 0.2) 92%); */
     /* background: linear-gradient(170deg, rgb(76, 0, 163, 0.1) 50%, rgb(17, 17, 17) 78%); */
     /* background-color: #1a1a1a; */
-    padding: 0px;
+    padding: 2px;
     border-radius: 10px;
     z-index: 0;
     /* box-shadow: 5px 14px 50px 7.6px rgb(245, 0, 0); */
@@ -140,15 +140,19 @@
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat; */
-    /* background: linear-gradient(-10deg, rgba(74,43,45,1) 10%, rgba(76,36,89,1) 20%, rgba(0,0,0,1) 35%); */
-    /* border: solid 1px white; */
-    /* background-image: linear-gradient(rgba(26, 26, 26, .7), rgba(0, 0, 0, .06)); */
-    border: 1px solid rgba(127, 127, 127, 0.18);
+    /* border: solid 1px rgb(90, 90, 90); */
+
+
+    /* background-image: linear-gradient(rgba(26, 26, 26, .7), rgba(0, 0, 0, .06));
+    border: 0.5px solid rgba(161, 159, 159, 0.5);
     box-shadow: 4px 8px 20px rgba(65, 65, 65, 0.6);
     background-image: url('./images/gradBg.png');
     background-size: cover;
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat; */
+
+
+    /* background: linear-gradient(-10deg, rgba(74,43,45,1) 10%, rgba(76,36,89,1) 20%, rgb(20, 20, 20) 35%); */
+
 }
 
 .display-container{
