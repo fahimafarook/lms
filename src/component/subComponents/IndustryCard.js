@@ -19,21 +19,23 @@ function IndustryCard(props) {
             end: '80% bottom',
             scrub: true,
           },
-          backgroundImage: "radial-gradient(circle, rgb(91, 91, 91) 0%, rgb(0, 0, 0) 70%)",  
-          opacity: 1,
-          
+         
+          backgroundImage: "radial-gradient(circle, rgb(73, 32, 114) 0%, rgb(0, 0, 0) 70%)",
+          opacity:1,
         });
 
-        gsap.to(sectionRef3.current, {
-            scrollTrigger: {
-              trigger: sectionRef3.current,
-              start: 'top center', 
-              end: '80% bottom',
-              scrub: true,
-            },
-           scale: 1.02,
+        
+
+        // gsap.to(sectionRef3.current, {
+        //     scrollTrigger: {
+        //       trigger: sectionRef3.current,
+        //       start: 'top center', 
+        //       end: '80% bottom',
+        //       scrub: true,
+        //     },
+        //    scale: 1.02,
             
-          });
+        //   });
     
         return () => {
           ScrollTrigger.getAll().forEach((trigger) => {

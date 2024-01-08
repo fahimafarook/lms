@@ -1,10 +1,18 @@
 .industry-card-section{
-    height: 100vh;
-    width: 100vw;
-    background-color: rgb(0, 0, 0);
+     margin-top: 5vh;
+    height: 95vh;
+    width: 95vw;
+    background: rgb(26, 26, 26);
     display: flex;
     flex-direction: row;
     transition: ease all 2s;
+    border: solid 0.5px rgb(108, 108, 108);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    transition: all 1s ease;
+    position: relative;
+    z-index: 1;
 }
 
 .ic-left-section{
@@ -15,6 +23,8 @@
     align-items: center;
     display: flex;
     position: relative;
+    border-radius: 15px;
+    z-index: 3;
 }
 
 .transform-ic-left{
@@ -24,11 +34,13 @@
 .ic-right-section{
     height: 100%;
     width: 50%;
-    /* background-color: rgb(9, 9, 9); */
+    background-color: rgb(23, 23, 23);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0vmin 5vmin 0vmin 10vmin;
+    border-radius: 15px;
+    z-index: 3;
 }
 
 .transform-ic-right{
@@ -42,9 +54,10 @@
     right: 0;
     bottom:0;
     opacity: 0;
-    background-image: radial-gradient(circle, rgb(91, 91, 91) 0%, rgb(0, 0, 0) 65%);
-    z-index: 2;
+    z-index: 3;
     transition: opacity 0.5s ease;
+    border-radius: 15px;
+    background-image: radial-gradient(circle, rgb(73, 32, 114) 0%, rgb(0, 0, 0) 70%),
 }
 
 .ic-mobile-screen{
