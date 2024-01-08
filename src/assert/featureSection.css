@@ -93,8 +93,8 @@
     transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
 
-    border: solid 0.2px rgb(38, 38, 38);
-    background: linear-gradient(180deg, rgb(14, 14, 15) 0%, rgb(5, 5, 5) 70%);
+    border: solid 0.2px rgb(78, 78, 78);
+    background: linear-gradient(180deg, rgb(24, 24, 24) 0%, rgb(10, 10, 10) 70%);
 
     /* background: linear-gradient(180deg, rgb(19, 19, 19) 0%, rgb(0, 0, 0) 70%); */
 
