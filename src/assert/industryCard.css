@@ -1,7 +1,7 @@
 .industry-card-section{
-     margin-top: 5vh;
-    height: 95vh;
-    width: 95vw;
+    margin-top: 10vh;
+    height: 90vh;
+    width: 75vw;
     background: rgb(26, 26, 26);
     display: flex;
     flex-direction: row;
