@@ -9,6 +9,7 @@ function IndustryCard(props) {
 
     const sectionRef = useRef(null);
     const sectionRef2 = useRef(null);
+    const sectionRef3 = useRef(null);
 
     useEffect(() => {
         gsap.to(sectionRef2.current, {
@@ -22,6 +23,17 @@ function IndustryCard(props) {
           opacity: 1,
           
         });
+
+        gsap.to(sectionRef3.current, {
+            scrollTrigger: {
+              trigger: sectionRef3.current,
+              start: 'top center', 
+              end: '80% bottom',
+              scrub: true,
+            },
+           scale: 1.02,
+            
+          });
     
         return () => {
           ScrollTrigger.getAll().forEach((trigger) => {
@@ -34,7 +46,7 @@ function IndustryCard(props) {
         <div ref={sectionRef} className='industry-card-section'>
             <div className={`ic-left-section ${props.index% 2 == 0 ? 'transform-ic-left' : ""}`}>
                 <div ref={sectionRef2} className='background-overlay'></div>
-                <img className='ic-mobile-screen' src = {phoneMock}></img>
+                <img ref={sectionRef3} className='ic-mobile-screen' src = {phoneMock}></img>
             </div>
             <div  className={`ic-right-section ${props.index % 2 == 0 ? 'transform-ic-right' : ""}`}>
                 <div className='ic-details-container'>
