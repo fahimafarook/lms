@@ -62,7 +62,7 @@ function LandingPage() {
                 <h1 className='product-tagline trigger-1'>software.</h1>
                 <div className='paragraph trigger-1'>Collaborate, manage projects and reach new productivity peaks. From high rises to the home office, accomplishit all with Zaiask!</div>
 
-                <GradientButton className = "book-demo-button" name ={"Book Demo"}></GradientButton>
+                <GradientButton className = "book-demo-button" arrow = {true} name ={"Book Demo"}></GradientButton>
               </div>
             
 

@@ -15,19 +15,39 @@
 
 
 .landing-page{
-    padding-top: 1vh;
-    height: 10vh;
-    width: 100vw;
-    background-color: #000000;
+    background-color: rgb(0, 0, 0)
 }
 
+
+:root {
+    --dot-bg: black;
+    --dot-color: rgb(98, 98, 98);
+    --dot-size: 1px;
+    --dot-space: 22px;
+    --gradient-start: #6557ff;
+    --gradient-mid: #aa3fff;
+    --gradient-end: #f8522e;
+  }
+
+
 .product-landing{
-    height: 100vh;
+    /* height: 100vh;
     overflow-x: hidden;
     width: 100vw;
     background-color: black;
-    animation: changeBackgrounds 4s linear 2s infinite;
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: changeBackgrounds 4s linear 2s infinite; */
+
+        height: 100vh;
+        background:
+          linear-gradient(200deg, var(--gradient-start), var(--gradient-mid) 48%, var(--gradient-end) 76%, var(--gradient-end) 92%),
+          linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+          linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+          var(--dot-color);
+        background-blend-mode: overlay;
+        font-family: 'Arial', sans-serif;
+        color: white;
+        border-radius: 0 0 110% 10% ;
+
 }
 
 @keyframes changeBackgrounds {
@@ -49,7 +69,7 @@
 .container-section{
     margin-right: auto;
     margin-left: auto;
-    margin-top: 10vh;
+    padding-top: 10vh;
     margin-left: 10vh;
     width: fit-content;
 }

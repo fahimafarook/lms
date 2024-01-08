@@ -19,7 +19,7 @@
     color: rgb(255, 255, 255);
     z-index: 1;
     margin-top: 5vh;
-    padding: 2px;
+    padding: 1px;
     background-color:  #d1d1d1;
     background: linear-gradient(145deg, #6557ff, #aa3fff 48%, #fcf74a 76%, #f8522e 92%);
     transition: ease all 0.5s;

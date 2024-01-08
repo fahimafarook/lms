@@ -8,7 +8,7 @@ function GradientButton(props) {
             <div className='get-started-btn'>
                 <div className='btn-content'>
                 {props.name}
-                    <img className='btn-arrow' src={btnArrow}></img>
+                    {props.arrow && <img className="btn-arrow" src={btnArrow}></img>}
                 </div>
             </div>
         </div>

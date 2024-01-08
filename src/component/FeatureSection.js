@@ -3,8 +3,8 @@ import "../assert/featureSection.css"
 import data from '../data/featureDetails';
 import screen1 from '../assert/images/phone1.png';
 import phoneDotBg from '../assert/images/Drawing.png';
-import upIcon from '../assert/images/upArrow.png';
-import downIcon from '../assert/images/downArrow.png';
+import upIcon from '../assert/functionalIcons/progressUpIcon.png';
+import downIcon from '../assert/functionalIcons/progressUpIcon.png';
 import screen2 from '../assert/images/phone2.png';
 import phoneBg from '../assert/images/phone-bg.png';
 import icon1 from '../assert/images/icon1.png';
@@ -22,6 +22,8 @@ gsap.registerPlugin(ScrollTrigger);
 function FeatureSection(props) {
 
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+    const [rotateTheX, setRotateTheX] = useState(0);
+    const [rotateTheY, setRotateTheY] = useState(0)
 
     const [updownArrow, setUpDownArrow] = useState(false);
     const [animatePhone, setAnimatePhone] = useState(false);
@@ -37,9 +39,20 @@ function FeatureSection(props) {
     const sectionSubHeaderRef = useRef(null);
     const featureDescriptionRef = useRef(null);
     const scrollYValue = useRef(null);
+    const scrollXValue = useRef(null);
     const cardRef = useRef(null);
-  
 
+    let featureSectionElement;
+  
+    function mapRange(currentX, cardLeft, cardRight, startDeg, endDeg) {
+      console.log(((endDeg - startDeg) /(cardRight - cardLeft)) * currentX - endDeg);
+      if(startDeg >= 0){
+        return  ((endDeg - startDeg) /(cardRight - cardLeft)) * currentX;
+      }
+      else
+        return  ((endDeg - startDeg) /(cardRight - cardLeft)) * currentX  - endDeg;
+      // return ((value - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin;
+    }
 
     const downIconClick= () => {
         setUpDownArrow(!updownArrow);
@@ -147,8 +160,21 @@ function FeatureSection(props) {
 
 
       useEffect(() => {
+
+        featureSectionElement = document.getElementsByClassName("feature-section")
+
         const handleMouseMove = (e) => {
+          let a = featureSectionElement[props.id-1].getBoundingClientRect();
+          let value;
+          // value = mapRange(e.clientX - a.left , a.left, a.right, -0.5, 0.5);
+          // setRotateTheX(value);
+          // value = mapRange(e.clientX -  a.left, featureSectionElement[props.id-1].getBoundingClientRect().left, featureSectionElement[props.id-1].getBoundingClientRect().right, -15, 15);
+          // setRotateTheY(value);
+  
+        
+          // document.getElementsByClassName("feature-section")[props.id-1].style.transform = `rotateX(${rotateTheX}deg) rotateY(${rotateTheY}deg)`;
           setMousePosition({ x: e.clientX - document.getElementsByClassName("feature-section")[props.id-1].getBoundingClientRect().left - 50, y: e.clientY-document.getElementsByClassName("feature-section")[props.id-1].getBoundingClientRect().top -50});
+          scrollXValue.current = window.scrollY;
         };
 
         const handleScrollMove= () => {
@@ -171,7 +197,7 @@ function FeatureSection(props) {
 
     return (
         <div className='feature-section-parent'>
-        <div ref={cardRef} className='feature-section'>
+        <div ref={cardRef} className='feature-section' style = {{ transform: `rotateX(${rotateTheX}deg) rotateY(${rotateTheY}deg)`}}>
         <div className="pointer-light"style={{ left: `${mousePosition.x}px`, top: `${mousePosition.y}px` }} ></div>
             <div className='left-section'>
                 <div ref={sectionHeaderRef} className='section-header'>{props.description}</div>

@@ -13,7 +13,12 @@ function Header() {
                   <div className="top-bar-item ">
                     <Link to="/features" style={{ textDecoration: 'none', color: 'inherit' }}>Features</Link>
                   </div>
-                  <div className="top-bar-item ">Pricing</div>
+                  {/* <div className="top-bar-item ">
+                    <Link to="/pricing" style={{ textDecoration: 'none', color: 'inherit' }}>Pricing</Link>
+                  </div> */}
+                  <div className="top-bar-item ">
+                    <Link to="/industries" style={{ textDecoration: 'none', color: 'inherit' }}>Industries</Link>
+                  </div>
                   <div className="top-bar-item ">FAQ</div>
                   <div className="top-bar-item  top-bar-item-selected">Contact</div>
                   <div className="top-bar-item ">Get Started</div>
