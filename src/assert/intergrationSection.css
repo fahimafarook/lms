@@ -51,16 +51,7 @@
 }
 
 /* .intergration-compnay-logo, */
-.intergration-logo1,
-.intergration-logo2,
-.intergration-logo3,
-.intergration-logo4,
-.intergration-logo5,
-.intergration-logo6,
-.intergration-logo7,
-.intergration-logo8,
-.intergration-logo9,
-.intergration-logo10 {
+.ilogo {
     height: 6.7vmin;
     width: 6.7vmin;
     position: absolute;
@@ -69,6 +60,7 @@
     border-radius: 15px;
     z-index: 1;
     background-color: transparent;
+    box-shadow: 0 0 20px rgba(194, 194, 194, 0.1);
 }
 
 .logo-gradient-border{
@@ -92,52 +84,47 @@
 
 .transform-logo1{
     transform: translate(-15vw, -10vmin);
-    box-shadow: 0 0 20px rgba(32, 32, 32, 0.1);
 }
 
 .transform-logo2{
     transform: translate(15vw, -10vh);
-    box-shadow: 0 0 20px rgba(219, 219, 219, 0.1);
 }
 
 .transform-logo3{
     transform: translate(-5vw, 20vh);
-    box-shadow: 0 0 20px rgba(206, 206, 206, 0.1);
 }
 
 .transform-logo4{
     transform: translate(30vw, 5vh);
-    box-shadow: 0 0 20px rgba(213, 213, 213, 0.1);
 }
 
 .transform-logo5{
     transform: translate(15vw, 25vh);
-    box-shadow: 0 0 20px rgba(212, 212, 212, 0.1);
 }
 
 .transform-logo6{
     transform: translate(25vw, -30vh);
-    box-shadow: 0 0 20px rgba(198, 198, 198, 0.1);
 }
 
 .transform-logo7{
     transform: translate(-25vw, -30vh);
-    box-shadow: 0 0 20px rgba(194, 194, 194, 0.1);
 }
 
 .transform-logo8{
     transform: translate(-25vw,20vh);
-    box-shadow: 0 0 20px rgba(194, 194, 194, 0.1);
 }
 
 .transform-logo9{
     transform: translate(-30vw, 0vh);
-    box-shadow: 0 0 20px rgba(194, 194, 194, 0.1);
 }
 
 .transform-logo10{
     transform: translate(0vw, -30vh);
     box-shadow: 0 0 20px rgba(194, 194, 194, 0.1);
+}
+
+.ilogo:hover{
+    box-shadow: 0 0 25px rgb(206, 166, 242, 0.5);
 }
 
 

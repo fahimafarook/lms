@@ -85,17 +85,17 @@ function Intergration() {
                   <div className='logo-gradient-border'>
                       <img className='intergration-compnay-logo' src= {compnayLogo}></img>
                   </div>
-                    <img className= {`intergration-logo1 ${startAnimation ==true ? "transform-logo1" : ""}`} src= {logo1}></img>
-                    <img className= {`intergration-logo2 ${startAnimation ==true ? "transform-logo2" : ""}`} src= {logo2}></img>
-                    <img className= {`intergration-logo3 ${startAnimation ==true ? "transform-logo3" : ""}`} src= {logo3}></img>
-                    <img className= {`intergration-logo4 ${startAnimation ==true ? "transform-logo4" : ""}`} src= {logo4}></img>
-                    <img className= {`intergration-logo5 ${startAnimation ==true ? "transform-logo5" : ""}`} src= {logo5}></img>
+                    <img className= {`ilogo intergration-logo1 ${startAnimation ==true ? "transform-logo1" : ""}`} src= {logo1}></img>
+                    <img className= {`ilogo intergration-logo2 ${startAnimation ==true ? "transform-logo2" : ""}`} src= {logo2}></img>
+                    <img className= {`ilogo intergration-logo3 ${startAnimation ==true ? "transform-logo3" : ""}`} src= {logo3}></img>
+                    <img className= {`ilogo intergration-logo4 ${startAnimation ==true ? "transform-logo4" : ""}`} src= {logo4}></img>
+                    <img className= {`ilogo intergration-logo5 ${startAnimation ==true ? "transform-logo5" : ""}`} src= {logo5}></img>
 
-                    <img className= {`intergration-logo6 ${startAnimation ==true ? "transform-logo6" : ""}`} src= {logo6}></img>
-                    <img className= {`intergration-logo7 ${startAnimation ==true ? "transform-logo7" : ""}`} src= {logo2}></img>
-                    <img className= {`intergration-logo8 ${startAnimation ==true ? "transform-logo8" : ""}`} src= {logo5}></img>
-                    <img className= {`intergration-logo9 ${startAnimation ==true ? "transform-logo9" : ""}`} src= {logo4}></img>
-                    <img className= {`intergration-logo10 ${startAnimation ==true ? "transform-logo10" : ""}`} src= {logo5}></img>
+                    <img className= {`ilogo intergration-logo6 ${startAnimation ==true ? "transform-logo6" : ""}`} src= {logo6}></img>
+                    <img className= {`ilogo intergration-logo7 ${startAnimation ==true ? "transform-logo7" : ""}`} src= {logo2}></img>
+                    <img className= {`ilogo intergration-logo8 ${startAnimation ==true ? "transform-logo8" : ""}`} src= {logo5}></img>
+                    <img className= {`ilogo intergration-logo9 ${startAnimation ==true ? "transform-logo9" : ""}`} src= {logo4}></img>
+                    <img className= {`ilogo intergration-logo10 ${startAnimation ==true ? "transform-logo10" : ""}`} src= {logo5}></img>
               </div>
         </div>
       </div>
