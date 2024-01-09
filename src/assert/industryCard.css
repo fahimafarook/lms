@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: row;
     transition: ease all 2s;
-    border: solid 0.5px rgb(108, 108, 108);
+    border: solid 0.5px rgb(59, 59, 59);
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
@@ -34,7 +34,7 @@
 .ic-right-section{
     height: 100%;
     width: 50%;
-    background-color: rgb(23, 23, 23);
+    /* background-color: rgb(23, 23, 23); */
     display: flex;
     align-items: center;
     justify-content: center;

@@ -20,22 +20,9 @@ function IndustryCard(props) {
             scrub: true,
           },
          
-          backgroundImage: "radial-gradient(circle, rgb(73, 32, 114) 0%, rgb(0, 0, 0) 70%)",
+          backgroundImage: "radial-gradient(circle, hsl(55deg 91% 41%) 100%, 0%, rgb(0, 0, 0) 70%)",
           opacity:1,
         });
-
-        
-
-        // gsap.to(sectionRef3.current, {
-        //     scrollTrigger: {
-        //       trigger: sectionRef3.current,
-        //       start: 'top center', 
-        //       end: '80% bottom',
-        //       scrub: true,
-        //     },
-        //    scale: 1.02,
-            
-        //   });
     
         return () => {
           ScrollTrigger.getAll().forEach((trigger) => {

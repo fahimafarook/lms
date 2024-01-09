@@ -9,6 +9,7 @@ import data from '../data/featureDetails';
 import Spline from '@splinetool/react-spline';
 import AllFeatures from '../component/AllFeatures'
 import GradientButton from '../component/common/GradientButton'
+import Intergration from '../component/Intergration'
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -73,7 +74,10 @@ function LandingPage() {
               style={{ width: '100%', height: '100%' }} />
             </div> */}
         </div>
+        
+        <Intergration></Intergration>
 
+        <div style={{marginTop: "15vh"}}></div>
          {data.map((item) => (
             <FeatureSection key={item.id} {...item} />
           ))}

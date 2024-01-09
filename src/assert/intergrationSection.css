@@ -1,0 +1,143 @@
+.bg-styling{
+    background-color: #6557ff;
+    background-color: black;
+    animation: changeBackgrounds 2s linear 2s infinite;
+}
+
+@keyframes changeBackgrounds {
+    0% { background-image: url("../assert/images/bg1.png"); }
+    5.33% { background-image: url("../assert/images/bg2.png"); }
+    10.66% { background-image: url("../assert/images/bg3.png"); }
+    15% { background-image: url("../assert/images/bg4.png"); }
+    20% { background-image: url("../assert/images/bg1.png"); }
+    25%, 100% { background-image: none; }
+}
+
+
+.parent-intergration-section {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(13, 13, 13);
+    height: 95vh;
+    width: 80vw;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+
+.intergration-section {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(13, 13, 13);
+    height: 90vh;
+    width: 80vw;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+.intergation-heading{
+    text-align: center;
+    font-family: "WixMadeforDisplay-regular";
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-size: 150%;
+    color: white;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+/* .intergration-compnay-logo, */
+.intergration-logo1,
+.intergration-logo2,
+.intergration-logo3,
+.intergration-logo4,
+.intergration-logo5,
+.intergration-logo6,
+.intergration-logo7,
+.intergration-logo8,
+.intergration-logo9,
+.intergration-logo10 {
+    height: 6.5vmin;
+    width: 6.5vmin;
+    position: absolute;
+    transition: ease all 1s;
+    padding: 0.5vmin;
+    border-radius: 15px;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.logo-gradient-border{
+    position: relative;
+    background: linear-gradient(145deg, #6557ff, #aa3fff 48%, #fcf74a 76%, #f8522e 92%);
+    height: 10vmin;
+    width: 10vmin;
+    padding: 0.5px;
+    z-index: 2;
+}
+
+.intergration-compnay-logo{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 30px rgba(223, 69, 69, 0.3);
+    padding: 0px;
+    z-index: 2;
+    background-color: rgb(234, 233, 233);
+}
+
+.transform-logo1{
+    transform: translate(-15vw, -10vmin);
+    box-shadow: 0 0 20px rgba(32, 32, 32, 0.1);
+}
+
+.transform-logo2{
+    transform: translate(15vw, -10vh);
+    box-shadow: 0 0 20px rgba(219, 219, 219, 0.1);
+}
+
+.transform-logo3{
+    transform: translate(-5vw, 20vh);
+    box-shadow: 0 0 20px rgba(206, 206, 206, 0.1);
+}
+
+.transform-logo4{
+    transform: translate(30vw, 5vh);
+    box-shadow: 0 0 20px rgba(213, 213, 213, 0.1);
+}
+
+.transform-logo5{
+    transform: translate(15vw, 25vh);
+    box-shadow: 0 0 20px rgba(212, 212, 212, 0.1);
+}
+
+.transform-logo6{
+    transform: translate(25vw, -30vh);
+    box-shadow: 0 0 20px rgba(198, 198, 198, 0.1);
+}
+
+.transform-logo7{
+    transform: translate(-25vw, -30vh);
+    box-shadow: 0 0 20px rgba(194, 194, 194, 0.1);
+}
+
+.transform-logo8{
+    transform: translate(-25vw,20vh);
+    box-shadow: 0 0 20px rgba(194, 194, 194, 0.1);
+}
+
+.transform-logo9{
+    transform: translate(-30vw, 0vh);
+    box-shadow: 0 0 20px rgba(194, 194, 194, 0.1);
+}
+
+.transform-logo10{
+    transform: translate(0vw, -30vh);
+    box-shadow: 0 0 20px rgba(194, 194, 194, 0.1);
+}
+
+

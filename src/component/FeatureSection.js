@@ -222,7 +222,7 @@ function FeatureSection(props) {
                     
             <div className='right-section'>
         
-            <Spline  className="mobile-3d" scene="https://prod.spline.design/c4Gyp4-hugu5H3xK/scene.splinecode" />
+            {/* <Spline  className="mobile-3d" scene="https://prod.spline.design/c4Gyp4-hugu5H3xK/scene.splinecode" /> */}
                 {/* <div class="image-container">
                     <img className={`phone-screen ${animatePhone ? '' : 'phone-screen-rotate'}`} src={screen1} alt="Screen"></img>
                     <div class="phone-drops-bg"></div>
