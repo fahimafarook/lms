@@ -70,7 +70,7 @@
     margin-right: auto;
     margin-left: auto;
     padding-top: 10vh;
-    margin-left: 10vh;
+    margin-left: 20vh;
     width: fit-content;
 }
 
@@ -173,7 +173,7 @@
     letter-spacing: 1px;
     word-spacing: 2px;
     width: 45%;
-    color: #8b8b8b;
+    color: #a2a2a2;
 }
 
 .book-demo-button{
