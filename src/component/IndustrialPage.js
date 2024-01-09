@@ -82,7 +82,7 @@ function IndustrialPage() {
 
             <div className='with-crm'>
                 <div className='tiny-card-heading'>Real Estate CRM can help you with</div>
-                <div ref ={sectionRef4} className='tiny-cards-container row justify-content-center'> 
+                <div className='tiny-cards-container row justify-content-center'> 
                     {
                          IndustryData.realEstate.miniCard.map((item, index) =>(
                             <div className='tiny-card col-4 m-3'>
