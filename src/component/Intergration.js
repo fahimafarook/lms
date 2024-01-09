@@ -26,6 +26,9 @@ function Intergration() {
           onEnter: () => {
             setStartAnimation(true);
           },
+          onLeaveBack: () => {
+            setStartAnimation(false);
+          },
         },
       });
 
