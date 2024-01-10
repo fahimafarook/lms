@@ -10,7 +10,7 @@ import Spline from '@splinetool/react-spline';
 import AllFeatures from '../component/AllFeatures'
 import GradientButton from '../component/common/GradientButton'
 import Intergration from '../component/Intergration'
-
+import FAQSection from './common/FAQSection';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -82,7 +82,7 @@ function LandingPage() {
             <FeatureSection key={item.id} {...item} />
           ))}
 
-         
+        <FAQSection></FAQSection>
 
           <div className='spacing'></div>
         </div>

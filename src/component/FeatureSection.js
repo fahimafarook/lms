@@ -54,6 +54,11 @@ function FeatureSection(props) {
       // return ((value - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin;
     }
 
+    const featureHeadingClick = (currentIndexSelected)=>{
+      setUpDownArrow(!updownArrow);
+      currentSubMenuIndex.current = currentIndexSelected;
+    }
+
     const downIconClick= () => {
         setUpDownArrow(!updownArrow);
         if(currentSubMenuIndex.current === subMenuLength-1){
@@ -83,6 +88,8 @@ function FeatureSection(props) {
     },[updownArrow])
 
     useEffect(() => {
+
+      // document.getElementsByClassName("feature-progress-bar")[1].style.height = document.getElementsByClassName("feature-headings-section")[1].getBoundingClientRect().height + "px";
         if(animatePhone === true) {
             setTimeout(() => setAnimatePhone(!animatePhone), 100);
         }
@@ -139,7 +146,7 @@ function FeatureSection(props) {
               });
 
               gsap.to(cardRef.current, {
-                width: "90vw",
+                width: "87vw",
                 ease: 'power5.out',
                 // border: "solid 0.1px rgb(0, 0, 0)",
                 // borderRadius: "0px",
@@ -213,7 +220,7 @@ function FeatureSection(props) {
                     <div className='feature-headings-section'>
                         {props.subMenu.map((item, index) => (
                               <div key={index} className={`feature-button ${index === currentSubMenuIndex.current ? 'feature-button-selected' : ''}`}>
-                                  <div key={index} className={`feature-heading ${index === currentSubMenuIndex.current ? 'feature-selected' : ''}`}>{item.name}</div>
+                                  <div key={index} onClick={() => featureHeadingClick(index)} className={`feature-heading ${index === currentSubMenuIndex.current ? 'feature-selected' : ''}`}>{item.name}</div>
                               </div>
                         ))}
                     </div>

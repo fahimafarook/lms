@@ -6,6 +6,7 @@ import IndustryCard from './subComponents/IndustryCard'
 import data from '../data/industrialCard'
 import IndustryData from '../../src/data/industrial'
 import notepadIcon from '../assert/images/iconNotepadYellow.png';
+import FAQSection from './common/FAQSection';
 
 function IndustrialPage() {
 
@@ -111,6 +112,8 @@ function IndustrialPage() {
                     )) 
                 }
             </div>
+
+            <FAQSection></FAQSection>
             
 
         </div>
