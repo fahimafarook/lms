@@ -83,8 +83,6 @@ function LandingPage() {
           ))}
 
         <FAQSection></FAQSection>
-
-          <div className='spacing'></div>
         </div>
     );
 }
