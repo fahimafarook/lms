@@ -29,7 +29,7 @@ function FAQSection() {
 
     return (
         <div className='FAQ-section'>
-            <div className='FQA-header'>FAQ's</div>
+            <div className='FQA-header'>FAQs</div>
             <div className='FAQ-container'>
                 {
                     data.industrialFAQ.map((item, index) => {
