@@ -8,6 +8,11 @@ import IndustryData from '../../src/data/industrial'
 import notepadIcon from '../assert/images/iconNotepadYellow.png';
 import FAQSection from './common/FAQSection';
 
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
+import Lottie from 'lottie-react';
+import animationData from '../assert/images/Animation-1705241416314.json';  
+
+
 function IndustrialPage() {
 
     const sectionRef = useRef(null);
@@ -61,6 +66,18 @@ function IndustrialPage() {
             opacity:1,
             y: -20,
           });
+
+          gsap.to(".industial-intro-page", {
+            ease: 'power5.out',
+            // border: "solid 0.1px rgb(0, 0, 0)",
+            // borderRadius: "0px",
+            scrollTrigger: {
+              trigger: ".industial-intro-page",
+              start: 'top 10%',
+              toggleActions: 'play none none reverse',
+              scrub: true,
+            },
+          });
     
         return () => {
           ScrollTrigger.getAll().forEach((trigger) => {
@@ -71,6 +88,18 @@ function IndustrialPage() {
 
     return (
         <div className='industrial-page'>
+            <div className='industial-intro-pag'>
+                {/* <Lottie
+                animationData={animationData}
+                loop={true}
+                autoplay={true}
+                style={{ width: '1000px', height: '1000px' }}
+                />  */}
+                <div className='transparent-section'>
+                  <div className='is1-heaeder'>India's Simplest Real Estate CRM Software</div>
+                  <div className='is1-subHeader'>Track your agents, boost calling efficiency, automate repetitive tasks, and take your business to the next level with India's No. 1 Real Estate CRM.</div>
+                </div>
+            </div>
             <div className='why-section'>
                 <h1 ref ={sectionRef} className='why-heading'>Why Real Estate CRM ?</h1>
                 <div ref ={sectionRef2} className='why-explanation'>A real estate CRM is a specialized tool designed for real estate agents, brokers, and agencies to help streamline sales processes, organize client information, and manage leads, properties, and appointments efficiently.</div>

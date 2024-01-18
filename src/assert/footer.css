@@ -9,12 +9,29 @@
 
 .footer{
     bottom: 0;
-    font-size: 110%;
+    font-size: 90%;
     font-family: "WixMadeforDisplay-regular";
     color: rgb(158, 156, 156);
     background-color: rgb(0, 0, 0);
     padding-bottom: 5vh;
     box-shadow: 0 -60px 200px rgba(145, 18, 224, 0.5);
+    left: 0%;
+    margin: 0%;
+    transform: translateX(12px);
+    
+}
+
+.footer {
+    bottom: 0;
+    font-size: 90%;
+    font-family: "WixMadeforDisplay-regular";
+    color: rgb(158, 156, 156);
+    background-color: rgb(0, 0, 0);
+    padding-bottom: 5vh;
+    box-shadow: 
+        0 -60px 200px rgba(145, 18, 224, 0.5),
+        20px -60px 200px rgba(45, 4, 228, 0.5),
+        40px -60px 200px rgba(81, 208, 2, 0.5);
     left: 0%;
     margin: 0%;
     transform: translateX(12px);

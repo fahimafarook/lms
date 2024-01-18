@@ -17,9 +17,7 @@ function Footer() {
           <div className='footer-company col-md-2 col-4'>
             <div className='contact-information'>
                 <span className='footer-headings'>Contact Info</span><br/>
-                xxxxxxxxxxx
                 xxxxxxxxxxx <br/>
-                xxxxxxxxxxx
                 xxxxxxxxxxx<br/>
                 xxxxxxxxxxx<br/>
             </div>
@@ -28,7 +26,7 @@ function Footer() {
             <span className='footer-headings'>Intergration</span><br/>
             Facebook<br/>
             Instagram<br/>
-            Watsapp<br/>
+            Wastapp<br/>
             Google<br/>
             LinkedIn<br/>
             Justdial<br/>
