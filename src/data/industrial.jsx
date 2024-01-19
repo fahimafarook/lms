@@ -1,5 +1,33 @@
 const industryDetails = {
     realEstate: {
+        intoPageHeading:"India's Simplest Real Estate CRM Software",
+        intoPageSubHeading:"Track your agents, boost calling efficiency, automate repetitive tasks, and take your business to the next level with India's No. 1 Real Estate CRM.",
+        intoPgaeIcons:[
+            {
+                iconName : "",
+                iconExplantion:"Auto-lead Capture",
+            },
+            {
+                iconName : "",
+                iconExplantion:"Call Recording and Tracking",
+            },
+            {
+                iconName : "",
+                iconExplantion:"Auto-dialer",
+            },
+            {
+                iconName : "",
+                iconExplantion:"Auto-lead Capture",
+            },
+            {
+                iconName : "",
+                iconExplantion:"Auto-lead Capture",
+            },
+            {
+                iconName : "",
+                iconExplantion:"Auto-lead Capture",
+            },
+        ],
         miniCard:[
             {
                 heading: "Stay on Top of Follow-ups",

@@ -8,7 +8,7 @@
 .industial-intro-pag{
     height: 100vh;
     width: 100vw;
-    background-image: url("../assert/images/bg-cross5.png");
+    /* background-image: url("../assert/images/bg-corss.png"); */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -16,15 +16,26 @@
     align-items: center;
     position: relative;
     background-color: #000000;
+
+    height: 100vh;
+    background:
+      linear-gradient(200deg, var(--gradient-start), var(--gradient-mid) 48%, var(--gradient-end) 76%, var(--gradient-end) 92%),
+      linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+      linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+      var(--dot-color);
+    background-blend-mode: overlay;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    /* border-radius: 0 0 110% 10% ; */
     
 }
 
 .transparent-section{
     height: 100vh;
-    width: 70vw;
-    background-color: #000000;
-    border-right: solid 1px rgb(33, 12, 84);
-    border-left: solid 1px  rgb(33, 12, 84);
+    width: 85vw;
+    /* background-color: #000000; */
+    /* border-right: solid 1px rgb(33, 12, 84);
+    border-left: solid 1px  rgb(33, 12, 84); */
     border-radius: 0% 0% 0% 0%;
     padding: 5vmin;
     position: absolute;
@@ -39,7 +50,7 @@
     color: rgb(255, 255, 255);
     font-size: 230%;
     text-align: center;
-    background-color: black;
+    /* background-color: black; */
     border-radius: 15px;
     padding: 2vmin;
     background: linear-gradient(145deg, #6557ff, #aa3fff 48%, #fcf74a 76%, #f8522e 92%);
@@ -50,12 +61,73 @@
 
 .is1-subHeader{
     font-family: "WixMadeforDisplay-regular";
-    color: rgb(104, 104, 104);
+    color: rgb(152, 151, 151);
+    font-size: 110%;
+    text-align: center;
+    /* background-color: black; */
+    border-radius: 15px;
+    margin-top: 2vmin;
+}
+
+.icon-points-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 13vmin;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon-and-expalantion{
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    width: 11vw;
+}
+
+.blur-bg{
+    position: relative;
+}
+
+.blur-bg::before{
+    content: '';
+    /* background: linear-gradient(145deg, #ac7fdf, #2d2d2d 82%); */
+    background-size: cover;
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: blur(20px);
+
+}
+
+.i-icon{
+    z-index: 2;
+    height: 10vmin;
+    width: auto;
+    background-color: #262627;
+    border-radius: 50%;
+    padding: 2vmin;
+}
+
+.i-icon-explanation{
+    font-family: "WixMadeforDisplay-regular";
+    color: rgb(244, 244, 244);
     font-size: 100%;
     text-align: center;
-    background-color: black;
-    border-radius: 15px;
-    padding: 2vmin;
+    margin-top: 3vmin;
+}
+
+.industrial-book-demo{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    margin-top: 5vmin;
 }
 
 .why-section{
@@ -68,10 +140,11 @@
     justify-content: center;
 }
 
+
 .why-heading{
     font-family: "WixMadeforDisplay-regular";
     color: rgb(103, 90, 90);
-    font-size: 350%;
+    font-size: 230%;
     text-align: center;
     background: linear-gradient(145deg, #6557ff, #aa3fff 48%, #fcf74a 76%, #f8522e 92%);
     -webkit-background-clip: text;
@@ -99,7 +172,7 @@
 
 .with-crm{
     padding-top: 10vh;
-    min-height: 100vh;
+    max-height: 100vh;
 }
 
 .tiny-card-heading{
@@ -124,6 +197,7 @@
     height: 50vh;
     margin-left: auto;
     margin-right: auto ; */
+    width: 100vw;
 }
 
 .tiny-card{
@@ -148,16 +222,18 @@
 .tiny-card:hover > .tiny-card-title .tiny-card-name{
     transition: ease transform 0.5s;
     transform: translateX(2.5vmin);
+    font-size: 110%;
 }
 
 
 .tiny-card-title{
     display: flex;
     flex-direction: row;
+    align-items: center;
     padding-left: 5vmin;
     padding-right: 5vmin;
     margin-bottom: 1.75vmin;
-    height: 6vmin;
+    min-height: 6vmin;
 }
 
 .tiny-card-icon{
@@ -170,7 +246,7 @@
 .tiny-card-name{
     font-family: "WixMadeforDisplay-regular";
     color: rgb(255, 255, 255);
-    font-size: 135%;
+    font-size: 110%;
     transition: ease all 0.5s;
 }
 
@@ -178,7 +254,7 @@
     font-family: "WixMadeforDisplay-regular";
     word-spacing: 1px;
     color: rgb(122, 122, 122);
-    font-size: 100%;
+    font-size: 90%;
     padding-left: 5vmin;
     padding-right: 5vmin;
     margin-bottom: 1vmin;

@@ -10,7 +10,9 @@ import FAQSection from './common/FAQSection';
 
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
 import Lottie from 'lottie-react';
-import animationData from '../assert/images/Animation-1705241416314.json';  
+import animationData from '../assert/images/y8Ke7DzWpt.json';  
+import icon1 from '../assert/industrialIcons/recordingIcon.png';
+import GradientButton from '../../src/component/common/GradientButton'
 
 
 function IndustrialPage() {
@@ -96,8 +98,23 @@ function IndustrialPage() {
                 style={{ width: '1000px', height: '1000px' }}
                 />  */}
                 <div className='transparent-section'>
-                  <div className='is1-heaeder'>India's Simplest Real Estate CRM Software</div>
-                  <div className='is1-subHeader'>Track your agents, boost calling efficiency, automate repetitive tasks, and take your business to the next level with India's No. 1 Real Estate CRM.</div>
+                  <div className='is1-heaeder'>{IndustryData.realEstate.intoPageHeading}</div>
+                  <div className='is1-subHeader'>{IndustryData.realEstate.intoPageSubHeading}</div>
+                  <div className='icon-points-section'>
+                    {
+                      IndustryData.realEstate.intoPgaeIcons.map((item, index)=>{
+                        return(
+                        <div key={index} className='icon-and-expalantion'>
+                          <div className='blur-bg'>
+                             <img className='i-icon' src ={icon1}></img>
+                          </div>
+                          <div className='i-icon-explanation'>{item.iconExplantion}</div>
+                        </div>
+                        )
+                      })
+                    }
+                  </div>
+                  <GradientButton name ="Book Demo" className = "industrial-book-demo"/>
                 </div>
             </div>
             <div className='why-section'>
@@ -115,7 +132,7 @@ function IndustrialPage() {
                 <div className='tiny-cards-container row justify-content-center'> 
                     {
                          IndustryData.realEstate.miniCard.map((item, index) =>(
-                            <div className='tiny-card col-4 m-3'>
+                            <div className='tiny-card col-3 m-3'>
                                 <div className='tiny-card-title'>
                                     <img className='tiny-card-icon' src = {notepadIcon}></img>
                                     <div className='tiny-card-name'>{item.heading}</div>
