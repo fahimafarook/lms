@@ -114,7 +114,7 @@ function IndustrialPage() {
                       })
                     }
                   </div>
-                  <GradientButton name ="Book Demo" className = "industrial-book-demo"/>
+                  <GradientButton arrow ={true} name ="Book Demo" className = "industrial-book-demo"/>
                 </div>
             </div>
             <div className='why-section'>
