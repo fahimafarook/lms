@@ -19,8 +19,10 @@ function Header() {
                   <div className="top-bar-item ">
                     <Link to="/industries" style={{ textDecoration: 'none', color: 'inherit' }}>Industries</Link>
                   </div>
+                  <div className="top-bar-item ">
+                    <Link to="/contactUs" style={{ textDecoration: 'none', color: 'inherit' }}>Contact</Link>
+                  </div>
                   <div className="top-bar-item ">FAQ</div>
-                  <div className="top-bar-item  top-bar-item-selected">Contact</div>
                   <div className="top-bar-item ">Get Started</div>
                 </div>
             </div>
