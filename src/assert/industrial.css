@@ -24,7 +24,6 @@
       linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
       var(--dot-color);
     background-blend-mode: overlay;
-    font-family: 'Arial', sans-serif;
     color: white;
     /* border-radius: 0 0 110% 10% ; */
     
