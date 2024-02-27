@@ -55,7 +55,7 @@
     bottom:0;
     opacity: 0;
     z-index: 3;
-    transition: opacity 0.5s ease;
+    transition: opacity 2s ease;
     border-radius: 15px;
     /* background-image: radial-gradient(circle, hsl(268, 90%, 49%) 50%, 0%, rgb(108, 0, 216) 40%); */
       

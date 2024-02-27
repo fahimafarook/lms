@@ -42,6 +42,7 @@
     margin-left: auto;
     margin-right: auto;
     align-items: center;
+    
 }
 
 .is1-heaeder{
@@ -76,6 +77,7 @@
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 .icon-and-expalantion{
@@ -127,6 +129,12 @@
     margin-right: auto;
     width: fit-content;
     margin-top: 5vmin;
+    
+}
+
+.why-section-parent{
+    background-image: url("../assert/images/gradeint-bg1.png");
+    background-size: cover;
 }
 
 .why-section{
@@ -137,6 +145,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+   
 }
 
 
@@ -189,39 +198,51 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2vmin;
+
+    background: linear-gradient(145deg, #6557ff, #aa3fff 48%, #fcf74a 76%, #f8522e 92%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .tiny-cards-container{
-    /* width: 75vw;
-    height: 50vh;
-    margin-left: auto;
-    margin-right: auto ; */
     width: 100vw;
 }
 
 .tiny-card{
     border-right: solid 1px rgb(77, 76, 76);
     background-color: rgb(16, 16, 16);
-    padding: 3vmin 5vmin;
+    /* padding: 1px 1px; */
     border-radius: 25px;
-    transition: ease all 0.5s;
+    transition: ease all 0.3s;
+    
 }
 
-.tiny-card:hover{
-    background: linear-gradient(90deg, rgb(16, 16, 16) 60%, rgba(40, 40, 40, 0.1) 85%)
+.card-foreground{
+    position: relative;
+    background-color: rgb(16, 16, 16);
+    height: 100%;
+    width: 100%;
+    padding: 3vmin 3vmin;
+    border-radius: 25px;
 }
 
-.tiny-card:hover > .tiny-card-title .tiny-card-icon{
-    transition: ease transform 0.75s;
-    transform: scale(1);
-    height: 6vmin;
-    width: 6vmin;
+.tiny-card:hover {
+    background: linear-gradient(145deg, #f8522e, #fcf74a 48%, #aa3fff 76%, #6557ff 92%);
+    box-shadow: 0 0 25px 0 rgba(251, 24, 24, 0.5);
+     
 }
 
-.tiny-card:hover > .tiny-card-title .tiny-card-name{
-    transition: ease transform 0.5s;
-    transform: translateX(2.5vmin);
-    font-size: 110%;
+.card-foreground:hover{
+    background: linear-gradient(90deg, rgb(16, 16, 16) 60%, rgb(22, 22, 22) 85%)
+}
+
+.card-foreground:hover .tiny-card-icon{
+    transform: scale(1.1);
+}
+
+.card-foreground:hover .tiny-card-name{
+    transform: translateX(0.5vmin);
 }
 
 
@@ -233,13 +254,14 @@
     padding-right: 5vmin;
     margin-bottom: 1.75vmin;
     min-height: 6vmin;
+    
 }
 
 .tiny-card-icon{
-    transform: scale(0);
     transition: ease all 1s;
-    height: 0vmin;
-    width: 0vmin;
+    height: 5vmin;
+    width: 5vmin;
+    margin-right: 2vmin;
 }
 
 .tiny-card-name{
@@ -247,12 +269,17 @@
     color: rgb(255, 255, 255);
     font-size: 110%;
     transition: ease all 0.5s;
+
+    background: linear-gradient(145deg, #6557ff, #aa3fff 48%, #fcf74a 76%, #f8522e 92%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .tiny-card-description{
     font-family: "WixMadeforDisplay-regular";
     word-spacing: 1px;
-    color: rgb(122, 122, 122);
+    color: rgb(205, 205, 205);
     font-size: 90%;
     padding-left: 5vmin;
     padding-right: 5vmin;
